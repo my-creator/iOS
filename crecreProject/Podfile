@@ -9,5 +9,6 @@ target 'crecreProject' do
   # Pods for crecreProject
   
   pod 'Alamofire', '~> 4.3'
-
+  pod 'Kingfisher', '~> 5.0'
+  pod 'SwiftyJSON', '~> 4.0'
 end
