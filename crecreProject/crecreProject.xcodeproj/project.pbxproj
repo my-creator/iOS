@@ -34,6 +34,10 @@
 		225702C006F3E29CA76C9E52 /* Pods-crecreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.debug.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A11C013522C9DE13005D0DDF /* vote_home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vote_home.swift; sourceTree = "<group>"; };
 		A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsController.swift; sourceTree = "<group>"; };
+		A154253122CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		A154253322CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		A154253522CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		A154253722CBC00400FA8D47 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
 		CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crecreProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0479D622CA5DEF001C23DE /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		EF6E5EE422CA007100FF35AD /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
@@ -111,7 +115,11 @@
 				EFE56AB722CA6C4C007C5E22 /* likePost.swift */,
 				EF6E5EE622CA02A100FF35AD /* CommunityController.swift */,
 				EF6E5EE422CA007100FF35AD /* SearchController.swift */,
+				A154253122CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf */,
+				A154253722CBC00400FA8D47 /* NotoSansCJKkr-Light.otf */,
+				A154253322CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf */,
 				A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */,
+				A154253522CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf */,
 				A11C013522C9DE13005D0DDF /* vote_home.swift */,
 				EFAF747A22C90335004A0F75 /* Assets.xcassets */,
 				EF0479D622CA5DEF001C23DE /* NotoSansCJKkr-Medium.otf */,
@@ -190,10 +198,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A154253422CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf in Resources */,
+				A154253822CBC00400FA8D47 /* NotoSansCJKkr-Light.otf in Resources */,
 				EFAF747E22C90335004A0F75 /* LaunchScreen.storyboard in Resources */,
 				EFAF747B22C90335004A0F75 /* Assets.xcassets in Resources */,
 				EFAF747922C90334004A0F75 /* Main.storyboard in Resources */,
-				EF0479D722CA5DF6001C23DE /* NotoSansCJKkr-Medium.otf in Resources */,
+				A154253222CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf in Resources */,
+				A154253622CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
