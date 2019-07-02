@@ -10,9 +10,12 @@
 		2FDDC56C2B9FF561FE37439B /* Pods_crecreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */; };
 		A11C013622C9DE13005D0DDF /* vote_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C013522C9DE13005D0DDF /* vote_home.swift */; };
 		A11C013A22C9E3D6005D0DDF /* RadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */; };
+		A154253222CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A154253122CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf */; };
+		A154253422CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A154253322CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf */; };
+		A154253622CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A154253522CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf */; };
+		A154253822CBC00400FA8D47 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A154253722CBC00400FA8D47 /* NotoSansCJKkr-Light.otf */; };
 		EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE422CA007100FF35AD /* SearchController.swift */; };
 		EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE622CA02A100FF35AD /* CommunityController.swift */; };
-		EF9E61FC22C9F8B400FEBE88 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9E61FB22C9F8AB00FEBE88 /* NotoSansCJKkr-Medium.otf */; };
 		EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF747322C90334004A0F75 /* AppDelegate.swift */; };
 		EFAF747622C90334004A0F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF747522C90334004A0F75 /* ViewController.swift */; };
 		EFAF747922C90334004A0F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAF747722C90334004A0F75 /* Main.storyboard */; };
@@ -25,10 +28,13 @@
 		225702C006F3E29CA76C9E52 /* Pods-crecreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.debug.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A11C013522C9DE13005D0DDF /* vote_home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vote_home.swift; sourceTree = "<group>"; };
 		A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsController.swift; sourceTree = "<group>"; };
+		A154253122CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		A154253322CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		A154253522CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		A154253722CBC00400FA8D47 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
 		CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crecreProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6E5EE422CA007100FF35AD /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		EF6E5EE622CA02A100FF35AD /* CommunityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityController.swift; sourceTree = "<group>"; };
-		EF9E61FB22C9F8AB00FEBE88 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		EFAF747022C90334004A0F75 /* crecreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crecreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAF747322C90334004A0F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAF747522C90334004A0F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,10 +90,13 @@
 				EFAF747722C90334004A0F75 /* Main.storyboard */,
 				EF6E5EE622CA02A100FF35AD /* CommunityController.swift */,
 				EF6E5EE422CA007100FF35AD /* SearchController.swift */,
+				A154253122CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf */,
+				A154253722CBC00400FA8D47 /* NotoSansCJKkr-Light.otf */,
+				A154253322CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf */,
 				A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */,
+				A154253522CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf */,
 				A11C013522C9DE13005D0DDF /* vote_home.swift */,
 				EFAF747A22C90335004A0F75 /* Assets.xcassets */,
-				EF9E61FB22C9F8AB00FEBE88 /* NotoSansCJKkr-Medium.otf */,
 				EFAF747C22C90335004A0F75 /* LaunchScreen.storyboard */,
 				EFAF747F22C90335004A0F75 /* Info.plist */,
 			);
@@ -163,10 +172,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A154253422CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf in Resources */,
+				A154253822CBC00400FA8D47 /* NotoSansCJKkr-Light.otf in Resources */,
 				EFAF747E22C90335004A0F75 /* LaunchScreen.storyboard in Resources */,
 				EFAF747B22C90335004A0F75 /* Assets.xcassets in Resources */,
 				EFAF747922C90334004A0F75 /* Main.storyboard in Resources */,
-				EF9E61FC22C9F8B400FEBE88 /* NotoSansCJKkr-Medium.otf in Resources */,
+				A154253222CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf in Resources */,
+				A154253622CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
