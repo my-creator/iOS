@@ -11,4 +11,6 @@ target 'crecreProject' do
   pod 'Alamofire', '~> 4.3'
   pod 'Kingfisher', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'XLPagerTabStrip', '~> 9.0'
+  pod 'Hue'
 end
