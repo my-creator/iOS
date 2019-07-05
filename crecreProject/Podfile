@@ -13,4 +13,5 @@ target 'crecreProject' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'XLPagerTabStrip', '~> 9.0'
   pod 'Hue'
+  pod 'InfiniteLayout'
 end

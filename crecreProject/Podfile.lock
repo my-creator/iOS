@@ -1,6 +1,12 @@
 PODS:
   - Alamofire (4.8.2)
+  - CocoaProxy (0.1.1)
   - Hue (5.0.0)
+  - InfiniteLayout (0.4.1):
+    - CocoaProxy (~> 0)
+    - InfiniteLayout/Core (= 0.4.1)
+  - InfiniteLayout/Core (0.4.1):
+    - CocoaProxy (~> 0)
   - Kingfisher (5.4.0)
   - SwiftyJSON (4.3.0)
   - XLPagerTabStrip (9.0.0)
@@ -8,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.3)
   - Hue
+  - InfiniteLayout
   - Kingfisher (~> 5.0)
   - SwiftyJSON (~> 4.0)
   - XLPagerTabStrip (~> 9.0)
@@ -15,18 +22,22 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CocoaProxy
     - Hue
+    - InfiniteLayout
     - Kingfisher
     - SwiftyJSON
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CocoaProxy: 35ab81e24325b33834cffe45a3d1fd48ca67ef3a
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  InfiniteLayout: 458eadbcb94afc3d777141990fbfe7a804a35609
   Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: be143fd81f85f58b79e81092550fd2b8581591a3
+PODFILE CHECKSUM: 03eca3a799e67a53eca72fd66f6d79709b7a970a
 
 COCOAPODS: 1.6.1

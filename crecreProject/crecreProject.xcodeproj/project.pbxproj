@@ -10,23 +10,28 @@
 		2FDDC56C2B9FF561FE37439B /* Pods_crecreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */; };
 		A11C013622C9DE13005D0DDF /* vote_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C013522C9DE13005D0DDF /* vote_home.swift */; };
 		A11C013A22C9E3D6005D0DDF /* RadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */; };
-		EF0479D722CA5DF6001C23DE /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF0479D622CA5DEF001C23DE /* NotoSansCJKkr-Medium.otf */; };
 		EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE422CA007100FF35AD /* SearchController.swift */; };
 		EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE622CA02A100FF35AD /* CommunityController.swift */; };
+		EF7F960722CC57A100AD06A9 /* FBDtopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F960622CC57A000AD06A9 /* FBDtopView.swift */; };
 		EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */; };
 		EFA0014D22CBB50800136693 /* CommuChildVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0014C22CBB50800136693 /* CommuChildVC2.swift */; };
+		EFA696F622CE16BE00CD443A /* HotPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA696F522CE16BE00CD443A /* HotPostVC.swift */; };
 		EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF747322C90334004A0F75 /* AppDelegate.swift */; };
 		EFAF747622C90334004A0F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF747522C90334004A0F75 /* ViewController.swift */; };
 		EFAF747922C90334004A0F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAF747722C90334004A0F75 /* Main.storyboard */; };
 		EFAF747B22C90335004A0F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAF747A22C90335004A0F75 /* Assets.xcassets */; };
 		EFAF747E22C90335004A0F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAF747C22C90335004A0F75 /* LaunchScreen.storyboard */; };
+		EFBD123522CC786A008ABE60 /* FBDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD123422CC786A008ABE60 /* FBDetailVC.swift */; };
+		EFBD125522CCB8E9008ABE60 /* FBtableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD125422CCB8E9008ABE60 /* FBtableCell.swift */; };
 		EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6A1CF22CAFA80002336FE /* FreeBulletinVC.swift */; };
-		EFD6A1D222CB1A9B002336FE /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6A1D122CB1A9B002336FE /* testVC.swift */; };
 		EFE56AB822CA6C4C007C5E22 /* likePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AB722CA6C4C007C5E22 /* likePost.swift */; };
 		EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC322CA6E66007C5E22 /* PostCell.swift */; };
 		EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC522CA8401007C5E22 /* HotPostController.swift */; };
 		EFE56ACA22CA884C007C5E22 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC922CA884C007C5E22 /* Board.swift */; };
 		EFE56ACE22CA8898007C5E22 /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56ACD22CA8898007C5E22 /* BoardCell.swift */; };
+		EFE5AED622CDD59B003F6FA4 /* FreeBulletinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5AED522CDD59B003F6FA4 /* FreeBulletinCell.swift */; };
+		EFE5AED822CDD5F1003F6FA4 /* HotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5AED722CDD5F1003F6FA4 /* HotTableViewCell.swift */; };
+		EFE5AEDC22CDD8E0003F6FA4 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5AEDB22CDD8E0003F6FA4 /* post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +47,10 @@
 		EF0479D622CA5DEF001C23DE /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		EF6E5EE422CA007100FF35AD /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		EF6E5EE622CA02A100FF35AD /* CommunityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityController.swift; sourceTree = "<group>"; };
+		EF7F960622CC57A000AD06A9 /* FBDtopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDtopView.swift; sourceTree = "<group>"; };
 		EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuChildVC1.swift; sourceTree = "<group>"; };
 		EFA0014C22CBB50800136693 /* CommuChildVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuChildVC2.swift; sourceTree = "<group>"; };
+		EFA696F522CE16BE00CD443A /* HotPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPostVC.swift; sourceTree = "<group>"; };
 		EFAF747022C90334004A0F75 /* crecreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crecreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAF747322C90334004A0F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAF747522C90334004A0F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,13 +58,17 @@
 		EFAF747A22C90335004A0F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFAF747D22C90335004A0F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFAF747F22C90335004A0F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFBD123422CC786A008ABE60 /* FBDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDetailVC.swift; sourceTree = "<group>"; };
+		EFBD125422CCB8E9008ABE60 /* FBtableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBtableCell.swift; sourceTree = "<group>"; };
 		EFD6A1CF22CAFA80002336FE /* FreeBulletinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBulletinVC.swift; sourceTree = "<group>"; };
-		EFD6A1D122CB1A9B002336FE /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
 		EFE56AB722CA6C4C007C5E22 /* likePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likePost.swift; sourceTree = "<group>"; };
 		EFE56AC322CA6E66007C5E22 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EFE56AC522CA8401007C5E22 /* HotPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPostController.swift; sourceTree = "<group>"; };
 		EFE56AC922CA884C007C5E22 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		EFE56ACD22CA8898007C5E22 /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
+		EFE5AED522CDD59B003F6FA4 /* FreeBulletinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FreeBulletinCell.swift; path = ../FreeBulletinCell.swift; sourceTree = "<group>"; };
+		EFE5AED722CDD5F1003F6FA4 /* HotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTableViewCell.swift; sourceTree = "<group>"; };
+		EFE5AEDB22CDD8E0003F6FA4 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +112,18 @@
 		EFAF747222C90334004A0F75 /* crecreProject */ = {
 			isa = PBXGroup;
 			children = (
+				EFE5AED522CDD59B003F6FA4 /* FreeBulletinCell.swift */,
 				EFAF747322C90334004A0F75 /* AppDelegate.swift */,
 				EFAF747522C90334004A0F75 /* ViewController.swift */,
 				EFAF747722C90334004A0F75 /* Main.storyboard */,
+				EFA696F522CE16BE00CD443A /* HotPostVC.swift */,
+				EFE5AEDB22CDD8E0003F6FA4 /* post.swift */,
+				EFE5AED722CDD5F1003F6FA4 /* HotTableViewCell.swift */,
+				EFBD125422CCB8E9008ABE60 /* FBtableCell.swift */,
+				EFBD123422CC786A008ABE60 /* FBDetailVC.swift */,
+				EF7F960622CC57A000AD06A9 /* FBDtopView.swift */,
 				EFA0014C22CBB50800136693 /* CommuChildVC2.swift */,
 				EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */,
-				EFD6A1D122CB1A9B002336FE /* testVC.swift */,
 				EFD6A1CF22CAFA80002336FE /* FreeBulletinVC.swift */,
 				EFE56ACD22CA8898007C5E22 /* BoardCell.swift */,
 				EFE56AC922CA884C007C5E22 /* Board.swift */,
@@ -198,13 +215,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A154253422CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf in Resources */,
-				A154253822CBC00400FA8D47 /* NotoSansCJKkr-Light.otf in Resources */,
 				EFAF747E22C90335004A0F75 /* LaunchScreen.storyboard in Resources */,
 				EFAF747B22C90335004A0F75 /* Assets.xcassets in Resources */,
 				EFAF747922C90334004A0F75 /* Main.storyboard in Resources */,
-				A154253222CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf in Resources */,
-				A154253622CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +235,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-crecreProject/Pods-crecreProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaProxy/CocoaProxy.framework",
 				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/InfiniteLayout/InfiniteLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
@@ -233,7 +248,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaProxy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InfiniteLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
@@ -275,18 +292,24 @@
 				EFAF747622C90334004A0F75 /* ViewController.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
 				EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */,
+				EFE5AEDC22CDD8E0003F6FA4 /* post.swift in Sources */,
 				EFE56ACA22CA884C007C5E22 /* Board.swift in Sources */,
 				EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */,
+				EF7F960722CC57A100AD06A9 /* FBDtopView.swift in Sources */,
 				EFE56ACE22CA8898007C5E22 /* BoardCell.swift in Sources */,
+				EFBD125522CCB8E9008ABE60 /* FBtableCell.swift in Sources */,
 				A11C013A22C9E3D6005D0DDF /* RadioButtonsController.swift in Sources */,
 				EFE56AB822CA6C4C007C5E22 /* likePost.swift in Sources */,
-				EFD6A1D222CB1A9B002336FE /* testVC.swift in Sources */,
+				EFE5AED622CDD59B003F6FA4 /* FreeBulletinCell.swift in Sources */,
 				EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */,
 				EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */,
 				A11C013622C9DE13005D0DDF /* vote_home.swift in Sources */,
+				EFE5AED822CDD5F1003F6FA4 /* HotTableViewCell.swift in Sources */,
 				EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */,
+				EFA696F622CE16BE00CD443A /* HotPostVC.swift in Sources */,
 				EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */,
 				EFA0014D22CBB50800136693 /* CommuChildVC2.swift in Sources */,
+				EFBD123522CC786A008ABE60 /* FBDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

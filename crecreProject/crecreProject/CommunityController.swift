@@ -16,9 +16,16 @@ class CommunityController: ButtonBarPagerTabStripViewController {
     
     var postList: [likePost] = []
     
-    let purpleInspireColor = UIColor(red:0.13, green:0.03, blue:0.25, alpha:1.0)
+    let purpleInspireColor = UIColor(red:1.00, green:0.34, blue:0.97, alpha:1.0)
+    let unSelectedColor = UIColor(red:1.00, green:0.34, blue:0.97, alpha:1.0)
+    let usingGrayColor = UIColor(red:0.64, green:0.64, blue:0.64, alpha:1.0)
+
+
+//    UINavigationBar.appearance().setBackgroundImage(UIImage(named: "image")!.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch), for: .default)
+
     
     override func viewDidLoad() {
+        
         
         super.viewDidLoad()
         
@@ -27,9 +34,9 @@ class CommunityController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarItemBackgroundColor = .white
         settings.style.selectedBarBackgroundColor = purpleInspireColor
         settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
-        settings.style.selectedBarHeight = 2.0
+        settings.style.selectedBarHeight = 1.3
         settings.style.buttonBarMinimumLineSpacing = 0
-        settings.style.buttonBarItemTitleColor = .black
+        settings.style.buttonBarItemTitleColor = unSelectedColor
         settings.style.buttonBarItemsShouldFillAvailableWidth = true
         settings.style.buttonBarLeftContentInset = 0
         settings.style.buttonBarRightContentInset = 0
@@ -37,21 +44,14 @@ class CommunityController: ButtonBarPagerTabStripViewController {
         
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
-            oldCell?.label.textColor = .black
+            oldCell?.label.textColor = self?.usingGrayColor
             newCell?.label.textColor = self?.purpleInspireColor
         }
         
         
 
+        self.title = "커뮤니티"
         
-        
-        
-        let gradient = [UIColor(red:1.00, green:0.56, blue:0.99, alpha:1.0), UIColor(red:0.17, green:0.94, blue:0.94, alpha:1.0)].gradient()
-        
-        let secondGradient = [UIColor(red:1.00, green:0.56, blue:0.99, alpha:1.0), UIColor(red:0.17, green:0.94, blue:0.94, alpha:1.0)].gradient {
-            gradient in gradient.locations = [0.25, 1.0]
-            return gradient
-        }
         
 //        var realGradient = view.layer.addSublayer(gradient)
         
