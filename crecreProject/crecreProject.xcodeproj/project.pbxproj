@@ -10,7 +10,10 @@
 		2FDDC56C2B9FF561FE37439B /* Pods_crecreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */; };
 		A11C013622C9DE13005D0DDF /* vote_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C013522C9DE13005D0DDF /* vote_home.swift */; };
 		A11C013A22C9E3D6005D0DDF /* RadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */; };
-		EF0479D722CA5DF6001C23DE /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF0479D622CA5DEF001C23DE /* NotoSansCJKkr-Medium.otf */; };
+		A121C05B22CC8BB400AF97DE /* Current_VoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121C05A22CC8BB400AF97DE /* Current_VoteVC.swift */; };
+		A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */; };
+		A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E778A122CC94E900F44504 /* VoteChildVC2.swift */; };
+		A1E778A422CCCAB800F44504 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E778A322CCCAB800F44504 /* HomeVC.swift */; };
 		EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE422CA007100FF35AD /* SearchController.swift */; };
 		EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE622CA02A100FF35AD /* CommunityController.swift */; };
 		EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */; };
@@ -34,10 +37,14 @@
 		225702C006F3E29CA76C9E52 /* Pods-crecreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.debug.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A11C013522C9DE13005D0DDF /* vote_home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vote_home.swift; sourceTree = "<group>"; };
 		A11C013922C9E3D6005D0DDF /* RadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsController.swift; sourceTree = "<group>"; };
+		A121C05A22CC8BB400AF97DE /* Current_VoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current_VoteVC.swift; sourceTree = "<group>"; };
 		A154253122CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		A154253322CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		A154253522CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		A154253722CBC00400FA8D47 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
+		A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteChildVC1.swift; sourceTree = "<group>"; };
+		A1E778A122CC94E900F44504 /* VoteChildVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteChildVC2.swift; sourceTree = "<group>"; };
+		A1E778A322CCCAB800F44504 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crecreProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0479D622CA5DEF001C23DE /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		EF6E5EE422CA007100FF35AD /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
@@ -104,6 +111,10 @@
 				EFAF747322C90334004A0F75 /* AppDelegate.swift */,
 				EFAF747522C90334004A0F75 /* ViewController.swift */,
 				EFAF747722C90334004A0F75 /* Main.storyboard */,
+				A1E778A322CCCAB800F44504 /* HomeVC.swift */,
+				A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */,
+				A1E778A122CC94E900F44504 /* VoteChildVC2.swift */,
+				A121C05A22CC8BB400AF97DE /* Current_VoteVC.swift */,
 				EFA0014C22CBB50800136693 /* CommuChildVC2.swift */,
 				EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */,
 				EFD6A1D122CB1A9B002336FE /* testVC.swift */,
@@ -198,13 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A154253422CB65A500FA8D47 /* NotoSansCJKkr-Regular.otf in Resources */,
-				A154253822CBC00400FA8D47 /* NotoSansCJKkr-Light.otf in Resources */,
 				EFAF747E22C90335004A0F75 /* LaunchScreen.storyboard in Resources */,
 				EFAF747B22C90335004A0F75 /* Assets.xcassets in Resources */,
 				EFAF747922C90334004A0F75 /* Main.storyboard in Resources */,
-				A154253222CB560D00FA8D47 /* NotoSansCJKkr-Medium.otf in Resources */,
-				A154253622CB84CC00FA8D47 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,18 +281,22 @@
 			files = (
 				EFAF747622C90334004A0F75 /* ViewController.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
+				A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */,
 				EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */,
 				EFE56ACA22CA884C007C5E22 /* Board.swift in Sources */,
 				EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */,
 				EFE56ACE22CA8898007C5E22 /* BoardCell.swift in Sources */,
+				A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */,
 				A11C013A22C9E3D6005D0DDF /* RadioButtonsController.swift in Sources */,
 				EFE56AB822CA6C4C007C5E22 /* likePost.swift in Sources */,
+				A121C05B22CC8BB400AF97DE /* Current_VoteVC.swift in Sources */,
 				EFD6A1D222CB1A9B002336FE /* testVC.swift in Sources */,
 				EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */,
 				EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */,
 				A11C013622C9DE13005D0DDF /* vote_home.swift in Sources */,
 				EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */,
 				EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */,
+				A1E778A422CCCAB800F44504 /* HomeVC.swift in Sources */,
 				EFA0014D22CBB50800136693 /* CommuChildVC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
