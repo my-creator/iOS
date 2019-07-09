@@ -11,9 +11,11 @@ import XLPagerTabStrip
 
 class CommuChildVC2: UIViewController, IndicatorInfoProvider{
     
+    @IBOutlet weak var Child2TableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Child2TableView.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
+
         // Do any additional setup after loading the view.
     }
     

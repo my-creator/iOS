@@ -10,10 +10,12 @@ import UIKit
 
 class FreeBulletinVC: UIViewController {
 
+    @IBOutlet weak var FreeBulletinTV: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        FreeBulletinTV.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
         // Do any additional setup after loading the view.
+        self.title = "최신글"
     }
     
 
