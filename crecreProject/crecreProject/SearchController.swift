@@ -10,6 +10,7 @@ import UIKit
 
 class SearchController: UIViewController {
 
+    @IBOutlet weak var navigationcontroller: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
