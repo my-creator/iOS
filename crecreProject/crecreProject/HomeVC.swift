@@ -10,21 +10,38 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var SearchTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configuresTextFields()
+        configureTapGestures()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configureTapGestures(){
+        _ = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        
     }
-    */
+    @objc func handleTap(){
+        print("handleTap was called.")
+        view.endEditing(true)
+    }
+    private func configuresTextFields(){
+        SearchTextField.delegate = self
+    }
+    
+    
 
+
+}
+extension UIViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }

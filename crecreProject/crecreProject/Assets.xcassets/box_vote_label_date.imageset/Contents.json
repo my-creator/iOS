@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "box_vote_label_date.png",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "box_vote_label_date@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "scale" : "3x",
+      "filename" : "box_vote_label_date@3x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

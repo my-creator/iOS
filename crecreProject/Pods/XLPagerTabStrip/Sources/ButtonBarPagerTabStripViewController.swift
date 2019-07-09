@@ -42,19 +42,19 @@ public enum ButtonBarItemSpec<CellType: UICollectionViewCell> {
 public struct ButtonBarPagerTabStripSettings {
 
     public struct Style {
-        public var buttonBarBackgroundColor: UIColor?
+        public var buttonBarBackgroundColor = UIColor(white: 247.0 / 255.0, alpha: 1.0)
         public var buttonBarMinimumInteritemSpacing: CGFloat?
         public var buttonBarMinimumLineSpacing: CGFloat?
         public var buttonBarLeftContentInset: CGFloat?
         public var buttonBarRightContentInset: CGFloat?
 
-        public var selectedBarBackgroundColor = UIColor.black
-        public var selectedBarHeight: CGFloat = 5
+        public var selectedBarBackgroundColor = UIColor(red: 1.0, green: 87.0 / 255.0, blue: 247.0 / 255.0, alpha: 1.0)
+        public var selectedBarHeight: CGFloat = 2
         public var selectedBarVerticalAlignment: SelectedBarVerticalAlignment = .bottom
 
         public var buttonBarItemBackgroundColor: UIColor?
-        public var buttonBarItemFont = UIFont.systemFont(ofSize: 18)
-        public var buttonBarItemLeftRightMargin: CGFloat = 8
+        public var buttonBarItemFont =  UIFont(name: "NotoSansCJKkr-Medium", size: 14.0)
+        public var buttonBarItemLeftRightMargin: CGFloat = 0
         public var buttonBarItemTitleColor: UIColor?
         public var buttonBarItemsShouldFillAvailableWidth = true
         // only used if button bar is created programaticaly and not using storyboards or nib files
