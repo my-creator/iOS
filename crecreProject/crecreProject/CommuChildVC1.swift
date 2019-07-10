@@ -11,9 +11,13 @@ import XLPagerTabStrip
 
 class CommuChildVC1: UIViewController, IndicatorInfoProvider{
 
+    
+    @IBOutlet weak var Child1TableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Child1TableView.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -25,15 +29,8 @@ class CommuChildVC1: UIViewController, IndicatorInfoProvider{
         return IndicatorInfo(title: "최신글")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
+    
 }

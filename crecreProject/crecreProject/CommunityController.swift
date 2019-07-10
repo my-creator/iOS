@@ -21,7 +21,7 @@ class CommunityController: ButtonBarPagerTabStripViewController {
     let lightMagenta = UIColor(red: 1.0, green: 87.0 / 255.0, blue: 247.0 / 255.0, alpha: 1.0)
     let greyish =  UIColor(white: 164.0 / 255.0, alpha: 1.0)
     
-    
+    let medium = UIFont(name: "NotoSansCJKkr-Medium", size: 14.0)
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class CommunityController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarBackgroundColor = whiteFive //버튼 사이의 간격
         settings.style.buttonBarItemBackgroundColor =  whiteFive // 버튼전체 색
         settings.style.selectedBarBackgroundColor = lightMagenta //밑에 바
-//      settings.style.buttonBarItemFont = UIFont(name: "NotoSansCJKkr-Medium", size: 14.0)!
+     settings.style.buttonBarItemFont = medium
         settings.style.selectedBarHeight = 2.0 //바 높이
         settings.style.buttonBarMinimumLineSpacing = 0
         settings.style.buttonBarItemTitleColor = .lightGray //바 우측상단 버튼
