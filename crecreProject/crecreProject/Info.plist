@@ -4,8 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NotoSansCJKkr-Medium</string>
 		<string>NotoSansCJKkr-Regular</string>
+		<string>NotoSansCJKkr-Medium</string>
 		<string>NotoSansCJKkr-Bold</string>
 		<string>NotoSansCJKkr-Light</string>
 	</array>

@@ -53,7 +53,7 @@ public struct ButtonBarPagerTabStripSettings {
         public var selectedBarVerticalAlignment: SelectedBarVerticalAlignment = .bottom
 
         public var buttonBarItemBackgroundColor: UIColor?
-        public var buttonBarItemFont =  UIFont(name: "NotoSansCJKkr-Medium", size: 14.0)
+        public var buttonBarItemFont =  UIFont()
         public var buttonBarItemLeftRightMargin: CGFloat = 0
         public var buttonBarItemTitleColor: UIColor?
         public var buttonBarItemsShouldFillAvailableWidth = true

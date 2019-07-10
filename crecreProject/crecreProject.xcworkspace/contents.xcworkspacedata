@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:crecreProject/CreatorResearch/ResearchViewCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:crecreProject.xcodeproj">
    </FileRef>
    <FileRef
