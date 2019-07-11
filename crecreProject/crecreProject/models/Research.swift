@@ -35,5 +35,5 @@ struct Result: Codable {
     let categoryName: String
     let  creatorName : String
     let imgUrl: String
-   let  youtubeSubscriberCnt: Int
+    let  youtubeSubscriberCnt: Int
 }

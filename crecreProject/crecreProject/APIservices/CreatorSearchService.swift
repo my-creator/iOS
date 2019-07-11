@@ -15,7 +15,7 @@ struct CreatorSearchService{
     
     func getCreatorInfo(creator_name: String, completion: @escaping (NetworkResult<Any>) -> Void) {
         
-        let URL = APIConstants.CreatorInfoURL + "tv"
+        let URL = APIConstants.CreatorInfoURL + "b"
                 //"/\(creator_name)"
 
         let header: HTTPHeaders = [
