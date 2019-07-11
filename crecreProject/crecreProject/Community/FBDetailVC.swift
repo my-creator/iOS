@@ -34,6 +34,9 @@ class FBDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FBDetailTV.alwaysBounceVertical = false;
+
+        
         let image = UIImage(named: "navigationbar")
         self.navigationController?.navigationBar.setBackgroundImage(image, for: .default)
         setContents()
