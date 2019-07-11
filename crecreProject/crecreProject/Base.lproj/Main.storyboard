@@ -2936,7 +2936,7 @@
                                             <outlet property="ResultCategory" destination="Kor-3Z-Adm" id="DCh-hT-IDv"/>
                                             <outlet property="ResultClass" destination="m45-Qa-eEd" id="uBe-KD-sos"/>
                                             <outlet property="ResultCount" destination="vzi-94-0Jj" id="31h-H9-Lai"/>
-                                            <outlet property="ResultImage" destination="LQ7-kI-t7D" id="WOm-EZ-rYd"/>
+                                            <outlet property="ResultImage" destination="LQ7-kI-t7D" id="E7n-zd-ASW"/>
                                             <outlet property="ResultName" destination="XH3-sZ-94q" id="5Av-ed-Ctg"/>
                                         </connections>
                                     </tableViewCell>

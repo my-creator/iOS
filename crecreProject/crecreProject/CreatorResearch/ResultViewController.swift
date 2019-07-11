@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ResultViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class ResultViewController: UIViewController {
     var resultList: [Result] = []
     
     override func viewDidLoad() {
+        
+        
         setRankData()
         super.viewDidLoad()
         
@@ -50,11 +53,11 @@ extension ResultViewController: UITableViewDataSource {
 
         let result = resultList[indexPath.row]
 
-        cell.ResultImage.image = result.ResultImage
-        cell.ResultCategory.text = result.ResultCategory
-        cell.ResultName.text = result.ResultName
-        cell.ResultClass.image = result.ResultClass
-        cell.ResultCount.text = result.ResultCount
+//        cell.ResultImage.image = result.ResultImage
+//        cell.ResultCategory.text = result.ResultCategory
+//        cell.ResultName.text = result.ResultName
+//        cell.ResultClass.image = result.ResultClass
+//        cell.ResultCount.text = result.ResultCount
 
         return cell
     }
@@ -63,15 +66,15 @@ extension ResultViewController: UITableViewDataSource {
 
 extension ResultViewController {
     func setRankData() {
-        let result1 = Result(resultImage: "icn_down", resultcategory: "먹방", resultname: "얌무", resultclass: "icn_class5_3x", resultcount: "23,345,236")
-        let result2 = Result(resultImage: "ic_up", resultcategory: "뷰티", resultname: "이사배", resultclass: "icn_class6_3x", resultcount: "52,423,235")
-        let result3 = Result(resultImage: "icn_down", resultcategory: "브이로그", resultname: "오눅", resultclass: "icn_class4_3x", resultcount: "12,424,124")
-        let result4 = Result(resultImage: "icn_down", resultcategory: "게임", resultname: "대도서관", resultclass: "icn_class5_3x", resultcount: "41,124,124")
-        let result5 = Result(resultImage: "ic_up", resultcategory: "요리", resultname: "백정원", resultclass: "icn_class6_3x", resultcount: "85,234,356")
+//        let result1 = Result(resultImage: "icn_down", resultcategory: "먹방", resultname: "얌무", resultclass: "icn_class5_3x", resultcount: "23,345,236")
+//        let result2 = Result(resultImage: "ic_up", resultcategory: "뷰티", resultname: "이사배", resultclass: "icn_class6_3x", resultcount: "52,423,235")
+//        let result3 = Result(resultImage: "icn_down", resultcategory: "브이로그", resultname: "오눅", resultclass: "icn_class4_3x", resultcount: "12,424,124")
+//        let result4 = Result(resultImage: "icn_down", resultcategory: "게임", resultname: "대도서관", resultclass: "icn_class5_3x", resultcount: "41,124,124")
+//        let result5 = Result(resultImage: "ic_up", resultcategory: "요리", resultname: "백정원", resultclass: "icn_class6_3x", resultcount: "85,234,356")
         
        
         
-        resultList = [result1, result2, result3, result4, result5]
+//        resultList = [result1, result2, result3, result4, result5]
         
     }
     
