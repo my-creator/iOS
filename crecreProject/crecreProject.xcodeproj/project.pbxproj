@@ -50,6 +50,9 @@
 		EFE56AB822CA6C4C007C5E22 /* likePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AB722CA6C4C007C5E22 /* likePost.swift */; };
 		EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC322CA6E66007C5E22 /* PostCell.swift */; };
 		EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC522CA8401007C5E22 /* HotPostController.swift */; };
+		EFF8756C22D772E100F06812 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8756B22D772E100F06812 /* ResearchViewCell.swift */; };
+		EFF8757022D775A400F06812 /* BrandNewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */; };
+		EFF8757622D77A5000F06812 /* BrandNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8757522D77A5000F06812 /* BrandNewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +64,6 @@
 		A191A88D22D5BAC600412C10 /* RankViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewCell.swift; sourceTree = "<group>"; };
 		A191A88F22D5BE0E00412C10 /* Rank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
 		A191A89122D5E94D00412C10 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
-		A1B25F4622D765FF008AD028 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewCell.swift; sourceTree = "<group>"; };
-		A1CC08A622D602E300B8D0F2 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		A1CC08AF22D6367D00B8D0F2 /* Research.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Research.swift; sourceTree = "<group>"; };
 		A1CC08B122D7260000B8D0F2 /* APIContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIContants.swift; path = crecreProject/models/APIContants.swift; sourceTree = SOURCE_ROOT; };
@@ -102,6 +103,9 @@
 		EFE56AB722CA6C4C007C5E22 /* likePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likePost.swift; sourceTree = "<group>"; };
 		EFE56AC322CA6E66007C5E22 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EFE56AC522CA8401007C5E22 /* HotPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPostController.swift; sourceTree = "<group>"; };
+		EFF8756B22D772E100F06812 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewCell.swift; sourceTree = "<group>"; };
+		EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandNewTableViewCell.swift; sourceTree = "<group>"; };
+		EFF8757522D77A5000F06812 /* BrandNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandNewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 		A11E885822D5FBFA006469F3 /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				EFF8757522D77A5000F06812 /* BrandNewVC.swift */,
+				EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */,
 				EFD5EA1B22D72C1E0019D70E /* FreeBulletinTableCell.swift */,
 				EF19114D22D66B0D00992258 /* DetailTVC.swift */,
 				EF19114B22D668D100992258 /* Comment.swift */,
@@ -172,8 +178,8 @@
 		A1CC08AA22D626E900B8D0F2 /* Creatorsearch */ = {
 			isa = PBXGroup;
 			children = (
+				EFF8756B22D772E100F06812 /* ResearchViewCell.swift */,
 				A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */,
-				A1B25F4622D765FF008AD028 /* ResearchViewCell.swift */,
 			);
 			path = Creatorsearch;
 			sourceTree = "<group>";
@@ -393,11 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF8757622D77A5000F06812 /* BrandNewVC.swift in Sources */,
 				A1D87F2022D7A6AC0050C5A0 /* CreatorCount.swift in Sources */,
 				A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
-				A1B25F4722D765FF008AD028 /* ResearchViewCell.swift in Sources */,
 				A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */,
+				EFF8756C22D772E100F06812 /* ResearchViewCell.swift in Sources */,
 				A1CC08B922D7298C00B8D0F2 /* UIImageView+extensions.swift in Sources */,
 				A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */,
 				EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */,
@@ -418,6 +425,7 @@
 				A1CC08B622D728CE00B8D0F2 /* CreatorSearchService.swift in Sources */,
 				A1CC08B022D6367D00B8D0F2 /* Research.swift in Sources */,
 				EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */,
+				EFF8757022D775A400F06812 /* BrandNewTableViewCell.swift in Sources */,
 				A1CC08B222D7260000B8D0F2 /* APIContants.swift in Sources */,
 				A191A88A22D5237E00412C10 /* FBDetailVC.swift in Sources */,
 				A191A89222D5E94D00412C10 /* Vote.swift in Sources */,
