@@ -3410,12 +3410,16 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="7EM-fp-8MX" id="9Jo-uD-Xpx"/>
-                                                            <segue destination="LRC-Eo-X9V" kind="presentation" id="YtU-Od-TNe"/>
                                                         </connections>
                                                     </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlC-j8-Pix">
+                                                        <rect key="frame" x="60" y="9" width="267" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="tlC-j8-Pix" firstAttribute="leading" secondItem="lnn-Nu-pTD" secondAttribute="trailing" constant="9" id="C7c-gY-ue3"/>
                                                     <constraint firstItem="lnn-Nu-pTD" firstAttribute="leading" secondItem="lPs-cr-pGC" secondAttribute="trailing" constant="10" id="E8m-Ck-IJE"/>
                                                     <constraint firstAttribute="trailing" secondItem="fMz-l4-dJk" secondAttribute="trailing" constant="16" id="FZ4-Nf-Y74"/>
                                                     <constraint firstItem="fMz-l4-dJk" firstAttribute="centerY" secondItem="LKN-gY-eoh" secondAttribute="centerY" id="K1G-Ee-whC"/>
@@ -3424,6 +3428,8 @@
                                                     <constraint firstItem="fMz-l4-dJk" firstAttribute="leading" secondItem="lnn-Nu-pTD" secondAttribute="trailing" constant="9" id="auz-B5-4vE"/>
                                                     <constraint firstItem="lnn-Nu-pTD" firstAttribute="centerY" secondItem="LKN-gY-eoh" secondAttribute="centerY" id="emn-X2-VEE"/>
                                                     <constraint firstItem="lPs-cr-pGC" firstAttribute="leading" secondItem="LKN-gY-eoh" secondAttribute="leading" constant="16" id="gnj-AQ-WWc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tlC-j8-Pix" secondAttribute="trailing" constant="16" id="jPG-lU-kBl"/>
+                                                    <constraint firstItem="tlC-j8-Pix" firstAttribute="centerY" secondItem="LKN-gY-eoh" secondAttribute="centerY" id="m4C-I7-bta"/>
                                                     <constraint firstAttribute="height" constant="48" id="p6Q-WJ-FUb"/>
                                                 </constraints>
                                             </view>
