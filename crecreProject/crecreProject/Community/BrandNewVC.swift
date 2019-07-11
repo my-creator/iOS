@@ -1,47 +1,47 @@
 //
-//  FreeBulletinVC.swift
-//  crecreProject
+//  BrandNewVC.swift
+//  Alamofire
 //
-//  Created by 하준혁 on 2019. 7. 2..
-//  Copyright © 2019년 하준혁. All rights reserved.
+//  Created by 하준혁 on 11/07/2019.
 //
 
 import UIKit
 
-class FreeBulletinVC: UIViewController {
-
-    @IBOutlet weak var DBTable: UITableView!
+class BrandNewVC: UIViewController {
+    
+    @IBOutlet weak var TableView: UITableView!
+    
     
     var postList: [post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DBTable.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
-        // Do any additional setup after loading the view.
-        self.title = "자유게시판"
+        
+        TableView.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.title = "최신글"
         
         setPostData()
         
-        DBTable.dataSource = self
-        DBTable.delegate = self
-        
+        TableView.dataSource = self
+        TableView.delegate = self
+        // Do any additional setup after loading the view.
     }
-        
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
         
         
-        if let index = DBTable.indexPathForSelectedRow {
-            DBTable.deselectRow(at: index, animated: true)
+        if let index = TableView.indexPathForSelectedRow {
+            TableView.deselectRow(at: index, animated: true)
         }
     }
-
+    
 }
 
 
-
-extension FreeBulletinVC: UITableViewDelegate {
+extension BrandNewVC: UITableViewDelegate {
     /*
      didSelectRowAt 은 셀을 선택했을때 어떤 동작을 할 지 설정할 수 있습니다.
      여기서는 셀을 선택하면 그에 해당하는 MusicDetailVC 로 화면전환을 합니다.
@@ -98,7 +98,7 @@ extension FreeBulletinVC: UITableViewDelegate {
 }
 
 
-extension FreeBulletinVC: UITableViewDataSource {
+extension BrandNewVC: UITableViewDataSource {
     
     // UITalbeView 에 얼마나 많은 리스트를 담을 지 설정합니다.
     // 현재는 musicList 배열의 count 갯수 만큼 반환합니다.
@@ -110,15 +110,14 @@ extension FreeBulletinVC: UITableViewDataSource {
     // 각 index 에 해당하는 셀에 데이터를 주입합니다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = DBTable.dequeueReusableCell(withIdentifier: "FreeBulletinTableCell") as! FreeBulletinTableCell
+        let cell = TableView.dequeueReusableCell(withIdentifier: "BrandNewTableViewCell") as! BrandNewTableViewCell
         // 이 부분은 내가 보는 view만 데이터에서 로딩이 되어지게 하는 부분이다. 적은 메모리로도 많은 데이터를 핸들링하기 위한 코드
         // 데이터를 내가 보는 부분만 동적 할당을 하기 위해서 짜놓은 코드이다.
         // as 는 캐스팅을 하는 부분이다.
         
         let post = postList[indexPath.row]
         
-        cell.postImage.image = post.postImage
-        cell.HotImage.image = post.postHotImage
+        cell.ImageView.image = post.postImage
         cell.titleLabel.text = post.postTitle
         cell.infoLabel.text = post.postInfo
         
@@ -131,7 +130,7 @@ extension FreeBulletinVC: UITableViewDataSource {
 }
 
 
-extension FreeBulletinVC {
+extension BrandNewVC {
     func setPostData() {
         //        let music1 = Music(title: "삐삐", singer: "아이유", coverName: "album_iu")
         let post1 = post(title: "맛집추천", info: "김리뷰", coverName: "puppy", coverNameInfo: "icHot")
