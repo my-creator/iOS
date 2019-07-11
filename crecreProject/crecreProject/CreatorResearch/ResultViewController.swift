@@ -28,14 +28,12 @@ class ResultViewController: UIViewController {
         SearchBarView.layer.cornerRadius = 6
         SearchBarView.layer.borderColor = UIColor(white: 112/255, alpha: 1).cgColor
         SearchBarView.layer.borderWidth = 2
-        
-        
     
-    
+        
     }
 
-
 }
+
 extension ResultViewController: UITableViewDataSource {
 
     // UITalbeView 에 얼마나 많은 리스트를 담을 지 설정합니다.
@@ -61,6 +59,8 @@ extension ResultViewController: UITableViewDataSource {
         return cell
     }
 }
+
+
 extension ResultViewController {
     func setRankData() {
         let result1 = Result(resultImage: "icn_down", resultcategory: "먹방", resultname: "얌무", resultclass: "icn_class5_3x", resultcount: "23,345,236")
@@ -76,3 +76,6 @@ extension ResultViewController {
     }
     
 }
+
+
+
