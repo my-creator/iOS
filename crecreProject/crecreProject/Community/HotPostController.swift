@@ -51,7 +51,7 @@ extension HotPostController: UITableViewDelegate {
      */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 아래의 과정들은 1, 2차 세미나의 화면 전환 간 데이터 전달과 같습니다.
-        let dvc = storyboard?.instantiateViewController(withIdentifier: "FBDetailVC") as! FBDetailVC
+        let dvc = storyboard?.instantiateViewController(withIdentifier: "HotPostVC") as! FBDetailVC
         // 맨 아래 extension 에 musicList 배열에 저장하는 부분이 있습니다.
         // 해당하는 인덱스의 Model 을 저장합니다.
         let post = postList[indexPath.row]
