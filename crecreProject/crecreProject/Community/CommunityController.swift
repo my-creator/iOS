@@ -21,6 +21,8 @@ class CommunityController: ButtonBarPagerTabStripViewController {
     let lightMagenta = UIColor(red: 1.0, green: 87.0 / 255.0, blue: 247.0 / 255.0, alpha: 1.0)
     let greyish =  UIColor(white: 164.0 / 255.0, alpha: 1.0)
     
+
+    
     let medium = UIFont(name: "NotoSansCJKkr-Medium", size: 14.0)
     override func viewDidLoad() {
         
@@ -38,7 +40,8 @@ class CommunityController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarLeftContentInset = 0
         settings.style.buttonBarRightContentInset = 0
         
-        
+        let image = UIImage(named: "navigationbar")
+        self.navigationController?.navigationBar.setBackgroundImage(image, for: .default)
         
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
