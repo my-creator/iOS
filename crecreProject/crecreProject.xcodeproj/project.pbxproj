@@ -24,6 +24,7 @@
 		A1CC08C322D72F9F00B8D0F2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */; };
 		A1CC08C522D72FC200B8D0F2 /* DefaultRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */; };
 		A1D87F2022D7A6AC0050C5A0 /* CreatorCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */; };
+		A1D87F2822D7ADEA0050C5A0 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D87F2722D7ADEA0050C5A0 /* ResearchViewCell.swift */; };
 		A1E0FAAD22D0822700AEB709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0FAAC22D0822700AEB709 /* ViewController.swift */; };
 		A1E0FAAF22D0870300AEB709 /* VoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0FAAE22D0870300AEB709 /* VoteVC.swift */; };
 		A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */; };
@@ -74,6 +75,7 @@
 		A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRes.swift; sourceTree = "<group>"; };
 		A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorCount.swift; sourceTree = "<group>"; };
+		A1D87F2722D7ADEA0050C5A0 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResearchViewCell.swift; path = crecreProject/ResearchViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A1E0FAAC22D0822700AEB709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1E0FAAE22D0870300AEB709 /* VoteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteVC.swift; sourceTree = "<group>"; };
 		A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteChildVC1.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				EFF8756B22D772E100F06812 /* ResearchViewCell.swift */,
 				A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */,
+				A1D87F2722D7ADEA0050C5A0 /* ResearchViewCell.swift */,
 			);
 			path = Creatorsearch;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			files = (
 				EFF8757622D77A5000F06812 /* BrandNewVC.swift in Sources */,
 				A1D87F2022D7A6AC0050C5A0 /* CreatorCount.swift in Sources */,
+				A1D87F2822D7ADEA0050C5A0 /* ResearchViewCell.swift in Sources */,
 				A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
 				A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */,
