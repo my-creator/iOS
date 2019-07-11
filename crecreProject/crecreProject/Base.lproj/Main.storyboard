@@ -735,10 +735,10 @@
             </objects>
             <point key="canvasLocation" x="249" y="-1763"/>
         </scene>
-        <!--View Controller-->
+        <!--Creator Profile View Controller-->
         <scene sceneID="jRI-4Q-OOO">
             <objects>
-                <viewController id="49c-9I-J6n" sceneMemberID="viewController">
+                <viewController id="49c-9I-J6n" customClass="CreatorProfileViewController" customModule="crecreProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2t-tP-Ew7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2489,10 +2489,18 @@
                         <viewLayoutGuide key="safeArea" id="f3M-fU-55M"/>
                     </view>
                     <size key="freeformSize" width="375" height="2100"/>
+                    <connections>
+                        <outlet property="CreatorCategory" destination="E2K-sM-vpc" id="rPg-i0-xQ1"/>
+                        <outlet property="CreatorClass" destination="NVw-ER-anO" id="y1Y-CO-p4V"/>
+                        <outlet property="CreatorClassBg" destination="o8J-kG-IVh" id="RMo-yE-sqb"/>
+                        <outlet property="CreatorProfileImage" destination="Gns-LZ-gVO" id="XgH-ci-sox"/>
+                        <outlet property="CreatorSubscriber" destination="nOH-m4-1Gh" id="Evr-jR-bdj"/>
+                        <outlet property="CreatorTitle" destination="6Ux-Mg-nfQ" id="zQS-B3-nKI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kd0-nZ-nZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2645.5999999999999" y="-3600.0000000000005"/>
+            <point key="canvasLocation" x="-1402" y="-3784"/>
         </scene>
         <!--랭킹-->
         <scene sceneID="hwK-fI-fmW">
@@ -2938,6 +2946,7 @@
                                             <outlet property="ResultCount" destination="vzi-94-0Jj" id="31h-H9-Lai"/>
                                             <outlet property="ResultImage" destination="LQ7-kI-t7D" id="E7n-zd-ASW"/>
                                             <outlet property="ResultName" destination="XH3-sZ-94q" id="5Av-ed-Ctg"/>
+                                            <segue destination="49c-9I-J6n" kind="show" id="ajZ-wF-SdA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2994,13 +3003,14 @@
                         <viewLayoutGuide key="safeArea" id="oy8-zq-LGe"/>
                     </view>
                     <connections>
+                        <outlet property="CreatorCnt" destination="zgs-NA-x71" id="7CD-sv-tff"/>
                         <outlet property="ResearchTableView" destination="Y19-2l-uYf" id="QDy-JG-FWj"/>
                         <outlet property="SearchBarView" destination="O3a-IS-7Bf" id="9aH-zj-2Ev"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1r-gw-pKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3282.4000000000001" y="-4181.559220389805"/>
+            <point key="canvasLocation" x="-3319" y="-4181"/>
         </scene>
         <!--Vote ChildVC1-->
         <scene sceneID="7nQ-CG-K0J">
@@ -5972,7 +5982,7 @@
                                                     <constraint firstItem="KV7-vw-pIF" firstAttribute="leading" secondItem="Bzc-hq-1aQ" secondAttribute="leading" constant="16" id="uTd-sR-g5t"/>
                                                 </constraints>
                                             </view>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9cd-fr-bOc">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9cd-fr-bOc">
                                                 <rect key="frame" x="0.0" y="2116" width="375" height="288"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -6426,6 +6436,7 @@
                                             <constraint firstAttribute="trailing" secondItem="HSq-Zd-L2p" secondAttribute="trailing" constant="16" id="MvR-zy-rgx"/>
                                             <constraint firstItem="HSq-Zd-L2p" firstAttribute="width" secondItem="ajm-yU-3pl" secondAttribute="height" multiplier="343:3000" id="O3K-bL-hDn"/>
                                             <constraint firstItem="HSq-Zd-L2p" firstAttribute="leading" secondItem="ajm-yU-3pl" secondAttribute="leading" constant="16" id="Os9-8q-nKn"/>
+                                            <constraint firstItem="9cd-fr-bOc" firstAttribute="top" secondItem="Bzc-hq-1aQ" secondAttribute="bottom" id="Pnv-o4-EHB"/>
                                             <constraint firstItem="FOz-WT-P7J" firstAttribute="top" secondItem="Jsy-ei-3HX" secondAttribute="bottom" id="RX2-Qc-50c"/>
                                             <constraint firstItem="nQO-xT-1ko" firstAttribute="leading" secondItem="ajm-yU-3pl" secondAttribute="leading" id="S59-bM-WCU"/>
                                             <constraint firstItem="l8O-VN-HvP" firstAttribute="top" secondItem="MKK-xn-uVe" secondAttribute="bottom" id="SeW-LS-p5u"/>

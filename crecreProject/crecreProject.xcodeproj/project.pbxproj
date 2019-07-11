@@ -23,11 +23,13 @@
 		A1CC08BD22D72E6C00B8D0F2 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08BC22D72E6C00B8D0F2 /* ResponseArray.swift */; };
 		A1CC08C322D72F9F00B8D0F2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */; };
 		A1CC08C522D72FC200B8D0F2 /* DefaultRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */; };
+		A1D87F2022D7A6AC0050C5A0 /* CreatorCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */; };
 		A1E0FAAD22D0822700AEB709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0FAAC22D0822700AEB709 /* ViewController.swift */; };
 		A1E0FAAF22D0870300AEB709 /* VoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0FAAE22D0870300AEB709 /* VoteVC.swift */; };
 		A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */; };
 		A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E778A122CC94E900F44504 /* VoteChildVC2.swift */; };
 		A1E778A422CCCAB800F44504 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E778A322CCCAB800F44504 /* HomeVC.swift */; };
+		A1E9D53E22D7A23C00F3EA74 /* CreatorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E9D53D22D7A23C00F3EA74 /* CreatorProfileViewController.swift */; };
 		A1FE558A22D321720056364A /* Vote_SuggestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE558922D321720056364A /* Vote_SuggestionVC.swift */; };
 		EF19114722D65EE000992258 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF19114322D65EDE00992258 /* NotoSansCJKkr-Bold.otf */; };
 		EF19114822D65EE000992258 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF19114422D65EDF00992258 /* NotoSansCJKkr-Light.otf */; };
@@ -71,11 +73,13 @@
 		A1CC08BC22D72E6C00B8D0F2 /* ResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseArray.swift; path = crecreProject/models/ResponseArray.swift; sourceTree = SOURCE_ROOT; };
 		A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRes.swift; sourceTree = "<group>"; };
+		A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorCount.swift; sourceTree = "<group>"; };
 		A1E0FAAC22D0822700AEB709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1E0FAAE22D0870300AEB709 /* VoteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteVC.swift; sourceTree = "<group>"; };
 		A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteChildVC1.swift; sourceTree = "<group>"; };
 		A1E778A122CC94E900F44504 /* VoteChildVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteChildVC2.swift; sourceTree = "<group>"; };
 		A1E778A322CCCAB800F44504 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A1E9D53D22D7A23C00F3EA74 /* CreatorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorProfileViewController.swift; sourceTree = "<group>"; };
 		A1FE558922D321720056364A /* Vote_SuggestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote_SuggestionVC.swift; sourceTree = "<group>"; };
 		CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crecreProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF19114322D65EDE00992258 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
@@ -171,13 +175,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A1CC08AA22D626E900B8D0F2 /* CreatorResearch */ = {
+		A1CC08AA22D626E900B8D0F2 /* Creatorsearch */ = {
 			isa = PBXGroup;
 			children = (
 				EFF8756B22D772E100F06812 /* ResearchViewCell.swift */,
 				A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */,
 			);
-			path = CreatorResearch;
+			path = Creatorsearch;
 			sourceTree = "<group>";
 		};
 		A1CC08B322D7266200B8D0F2 /* models */ = {
@@ -185,6 +189,7 @@
 			children = (
 				A1CC08AF22D6367D00B8D0F2 /* Research.swift */,
 				A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */,
+				A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */,
 				A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */,
 				A1CC08BC22D72E6C00B8D0F2 /* ResponseArray.swift */,
 				A1CC08B122D7260000B8D0F2 /* APIContants.swift */,
@@ -207,6 +212,14 @@
 				A1CC08BA22D729C700B8D0F2 /* UIColor+extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1E9D54022D7A27300F3EA74 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				A1E9D53D22D7A23C00F3EA74 /* CreatorProfileViewController.swift */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 		B89305A7605B8A26F18C5588 /* Frameworks */ = {
@@ -240,12 +253,13 @@
 			children = (
 				EFAF747722C90334004A0F75 /* Main.storyboard */,
 				A1E0FAAC22D0822700AEB709 /* ViewController.swift */,
+				A1E9D54022D7A27300F3EA74 /* profile */,
 				EFAF747322C90334004A0F75 /* AppDelegate.swift */,
 				EF6E5EE422CA007100FF35AD /* SearchController.swift */,
 				A1CC08B722D7296A00B8D0F2 /* Extensions */,
 				A1CC08B422D728A300B8D0F2 /* APIservices */,
 				A1CC08B322D7266200B8D0F2 /* models */,
-				A1CC08AA22D626E900B8D0F2 /* CreatorResearch */,
+				A1CC08AA22D626E900B8D0F2 /* Creatorsearch */,
 				A1CC08A522D5FD2E00B8D0F2 /* Home */,
 				A1365D2522D5FBAF00EA6B75 /* Vote */,
 				A11E885822D5FBFA006469F3 /* Community */,
@@ -386,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF8757622D77A5000F06812 /* BrandNewVC.swift in Sources */,
+				A1D87F2022D7A6AC0050C5A0 /* CreatorCount.swift in Sources */,
 				A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
 				A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */,
@@ -405,6 +420,7 @@
 				EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */,
 				A1FE558A22D321720056364A /* Vote_SuggestionVC.swift in Sources */,
 				A1CC08BD22D72E6C00B8D0F2 /* ResponseArray.swift in Sources */,
+				A1E9D53E22D7A23C00F3EA74 /* CreatorProfileViewController.swift in Sources */,
 				EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */,
 				A1CC08B622D728CE00B8D0F2 /* CreatorSearchService.swift in Sources */,
 				A1CC08B022D6367D00B8D0F2 /* Research.swift in Sources */,
