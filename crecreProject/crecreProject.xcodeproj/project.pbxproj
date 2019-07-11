@@ -14,16 +14,15 @@
 		A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88D22D5BAC600412C10 /* RankViewCell.swift */; };
 		A191A89022D5BE0E00412C10 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88F22D5BE0E00412C10 /* Rank.swift */; };
 		A191A89222D5E94D00412C10 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A89122D5E94D00412C10 /* Vote.swift */; };
+		A1B25F4722D765FF008AD028 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B25F4622D765FF008AD028 /* ResearchViewCell.swift */; };
 		A1CC08A722D602E300B8D0F2 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1CC08A622D602E300B8D0F2 /* NotoSansCJKkr-Medium.otf */; };
 		A1CC08A922D6197700B8D0F2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */; };
-		A1CC08AE22D6287D00B8D0F2 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08AD22D6287D00B8D0F2 /* ResearchViewCell.swift */; };
 		A1CC08B022D6367D00B8D0F2 /* Research.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08AF22D6367D00B8D0F2 /* Research.swift */; };
 		A1CC08B222D7260000B8D0F2 /* APIContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08B122D7260000B8D0F2 /* APIContants.swift */; };
 		A1CC08B622D728CE00B8D0F2 /* CreatorSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08B522D728CE00B8D0F2 /* CreatorSearchService.swift */; };
 		A1CC08B922D7298C00B8D0F2 /* UIImageView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08B822D7298C00B8D0F2 /* UIImageView+extensions.swift */; };
 		A1CC08BB22D729C700B8D0F2 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08BA22D729C700B8D0F2 /* UIColor+extensions.swift */; };
 		A1CC08BD22D72E6C00B8D0F2 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08BC22D72E6C00B8D0F2 /* ResponseArray.swift */; };
-		A1CC08C122D72EBA00B8D0F2 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C022D72EBA00B8D0F2 /* ResearchViewCell.swift */; };
 		A1CC08C322D72F9F00B8D0F2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */; };
 		A1CC08C522D72FC200B8D0F2 /* DefaultRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */; };
 		A1E0FAAD22D0822700AEB709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0FAAC22D0822700AEB709 /* ViewController.swift */; };
@@ -58,16 +57,15 @@
 		A191A88D22D5BAC600412C10 /* RankViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewCell.swift; sourceTree = "<group>"; };
 		A191A88F22D5BE0E00412C10 /* Rank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
 		A191A89122D5E94D00412C10 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		A1B25F4622D765FF008AD028 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewCell.swift; sourceTree = "<group>"; };
 		A1CC08A622D602E300B8D0F2 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		A1CC08AD22D6287D00B8D0F2 /* ResearchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchViewCell.swift; sourceTree = "<group>"; };
 		A1CC08AF22D6367D00B8D0F2 /* Research.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Research.swift; sourceTree = "<group>"; };
 		A1CC08B122D7260000B8D0F2 /* APIContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIContants.swift; path = crecreProject/models/APIContants.swift; sourceTree = SOURCE_ROOT; };
 		A1CC08B522D728CE00B8D0F2 /* CreatorSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorSearchService.swift; sourceTree = "<group>"; };
 		A1CC08B822D7298C00B8D0F2 /* UIImageView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extensions.swift"; sourceTree = "<group>"; };
 		A1CC08BA22D729C700B8D0F2 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		A1CC08BC22D72E6C00B8D0F2 /* ResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseArray.swift; path = crecreProject/models/ResponseArray.swift; sourceTree = SOURCE_ROOT; };
-		A1CC08C022D72EBA00B8D0F2 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResearchViewCell.swift; path = /Users/chaeyeonhwang/Documents/ios/crecre2/crecreProject/crecreProject/CreatorResearch/ResearchViewCell.swift; sourceTree = "<absolute>"; };
 		A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRes.swift; sourceTree = "<group>"; };
 		A1E0FAAC22D0822700AEB709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,9 +156,8 @@
 		A1CC08AA22D626E900B8D0F2 /* CreatorResearch */ = {
 			isa = PBXGroup;
 			children = (
-				A1CC08AD22D6287D00B8D0F2 /* ResearchViewCell.swift */,
-				A1CC08C022D72EBA00B8D0F2 /* ResearchViewCell.swift */,
 				A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */,
+				A1B25F4622D765FF008AD028 /* ResearchViewCell.swift */,
 			);
 			path = CreatorResearch;
 			sourceTree = "<group>";
@@ -369,6 +366,7 @@
 			files = (
 				A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
+				A1B25F4722D765FF008AD028 /* ResearchViewCell.swift in Sources */,
 				A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */,
 				A1CC08B922D7298C00B8D0F2 /* UIImageView+extensions.swift in Sources */,
 				A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */,
@@ -394,8 +392,6 @@
 				A1CC08C322D72F9F00B8D0F2 /* NetworkResult.swift in Sources */,
 				A1E778A422CCCAB800F44504 /* HomeVC.swift in Sources */,
 				A1CC08C522D72FC200B8D0F2 /* DefaultRes.swift in Sources */,
-				A1CC08C122D72EBA00B8D0F2 /* ResearchViewCell.swift in Sources */,
-				A1CC08AE22D6287D00B8D0F2 /* ResearchViewCell.swift in Sources */,
 				A191A88822D522F800412C10 /* post.swift in Sources */,
 				EFA0014D22CBB50800136693 /* CommuChildVC2.swift in Sources */,
 				A1CC08A922D6197700B8D0F2 /* ResultViewController.swift in Sources */,
