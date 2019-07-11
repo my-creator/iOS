@@ -31,9 +31,9 @@ import Foundation
 
 // MARK: - Webtoon
 struct Result: Codable {
-    let ResultImage: String
-    let ResultCategory: String
-    let  ResultName : String
-    let ResultClass: String
-   let  ResultCount: Int
+    let profileUrl: String
+    let categoryName: String
+    let  creatorName : String
+    let imgUrl: String
+   let  youtubeSubscriberCnt: Int
 }
