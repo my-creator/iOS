@@ -119,13 +119,13 @@ class ResultViewController: UIViewController {
 //    func callCount() {
 //
 //        do {
-
+//
 //            let url = URL(string: "http://13.125.32.90:3000/api/creators/allcreatorcnt")
 //
 //            let response = try String(contentsOf: url!)
 //            print(response)
 //
-//            self.creatorAllCnt.text = response.self.creatorAllCnt
+//            self.creatorAllCnt.text = resultList.
 ////
 //
 //        }catch let e as NSError {
@@ -184,14 +184,15 @@ extension ResultViewController: UITextFieldDelegate {
         guard let data = SearchTextField.text  else {return }
             
             delegate?.sendData(data: data)
-            
+
   
 //        guard let creator = SearchTextField.text else {return }
         
         
 //       print(SearchTextField.text)
 //        data.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        CreatorSearchService.shared.getCreatorInfo(creatorName: "\(data)"){
+
+        CreatorSearchService.shared.getCreatorInfo(creator_name:"\(data)"){
 
             data in
             switch data {
@@ -226,9 +227,6 @@ extension ResultViewController: UITextFieldDelegate {
     
     
 }
-
-
-
 
 
 
