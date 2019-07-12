@@ -1,9 +1,5 @@
-#### 크리크리
+# 크리크리
 - 크리에이터 랭킹조회 및 커뮤니티 서비스
-
-
-<br/>
-<br/>
 
 #### 개발환경
 
@@ -11,7 +7,7 @@
 - Alamofire 
 - Hue 
 - SwiftyJSON 
-- XLPaferTabStrip
+- XLPagerTabStrip
 - Kingfisher
 
 
