@@ -24,7 +24,7 @@
 		A1CC08C322D72F9F00B8D0F2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */; };
 		A1CC08C522D72FC200B8D0F2 /* DefaultRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */; };
 		A1D87F2022D7A6AC0050C5A0 /* CreatorCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */; };
-		A1D87F2822D7ADEA0050C5A0 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D87F2722D7ADEA0050C5A0 /* ResearchViewCell.swift */; };
+		A1D87F2A22D7C1410050C5A0 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D87F2922D7C1410050C5A0 /* ResearchViewCell.swift */; };
 		A1E0FAAD22D0822700AEB709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0FAAC22D0822700AEB709 /* ViewController.swift */; };
 		A1E0FAAF22D0870300AEB709 /* VoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0FAAE22D0870300AEB709 /* VoteVC.swift */; };
 		A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */; };
@@ -51,7 +51,6 @@
 		EFE56AB822CA6C4C007C5E22 /* likePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AB722CA6C4C007C5E22 /* likePost.swift */; };
 		EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC322CA6E66007C5E22 /* PostCell.swift */; };
 		EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC522CA8401007C5E22 /* HotPostController.swift */; };
-		EFF8756C22D772E100F06812 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8756B22D772E100F06812 /* ResearchViewCell.swift */; };
 		EFF8757022D775A400F06812 /* BrandNewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */; };
 		EFF8757622D77A5000F06812 /* BrandNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8757522D77A5000F06812 /* BrandNewVC.swift */; };
 /* End PBXBuildFile section */
@@ -75,7 +74,7 @@
 		A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRes.swift; sourceTree = "<group>"; };
 		A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorCount.swift; sourceTree = "<group>"; };
-		A1D87F2722D7ADEA0050C5A0 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResearchViewCell.swift; path = crecreProject/ResearchViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A1D87F2922D7C1410050C5A0 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewCell.swift; sourceTree = "<group>"; };
 		A1E0FAAC22D0822700AEB709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1E0FAAE22D0870300AEB709 /* VoteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteVC.swift; sourceTree = "<group>"; };
 		A1E7789F22CC94D100F44504 /* VoteChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteChildVC1.swift; sourceTree = "<group>"; };
@@ -105,7 +104,6 @@
 		EFE56AB722CA6C4C007C5E22 /* likePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likePost.swift; sourceTree = "<group>"; };
 		EFE56AC322CA6E66007C5E22 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EFE56AC522CA8401007C5E22 /* HotPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPostController.swift; sourceTree = "<group>"; };
-		EFF8756B22D772E100F06812 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewCell.swift; sourceTree = "<group>"; };
 		EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandNewTableViewCell.swift; sourceTree = "<group>"; };
 		EFF8757522D77A5000F06812 /* BrandNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandNewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,9 +178,8 @@
 		A1CC08AA22D626E900B8D0F2 /* Creatorsearch */ = {
 			isa = PBXGroup;
 			children = (
-				EFF8756B22D772E100F06812 /* ResearchViewCell.swift */,
+				A1D87F2922D7C1410050C5A0 /* ResearchViewCell.swift */,
 				A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */,
-				A1D87F2722D7ADEA0050C5A0 /* ResearchViewCell.swift */,
 			);
 			path = Creatorsearch;
 			sourceTree = "<group>";
@@ -404,11 +401,9 @@
 			files = (
 				EFF8757622D77A5000F06812 /* BrandNewVC.swift in Sources */,
 				A1D87F2022D7A6AC0050C5A0 /* CreatorCount.swift in Sources */,
-				A1D87F2822D7ADEA0050C5A0 /* ResearchViewCell.swift in Sources */,
 				A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
 				A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */,
-				EFF8756C22D772E100F06812 /* ResearchViewCell.swift in Sources */,
 				A1CC08B922D7298C00B8D0F2 /* UIImageView+extensions.swift in Sources */,
 				A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */,
 				EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */,
@@ -423,6 +418,7 @@
 				EFD5EA1C22D72C1E0019D70E /* FreeBulletinTableCell.swift in Sources */,
 				EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */,
 				A1FE558A22D321720056364A /* Vote_SuggestionVC.swift in Sources */,
+				A1D87F2A22D7C1410050C5A0 /* ResearchViewCell.swift in Sources */,
 				A1CC08BD22D72E6C00B8D0F2 /* ResponseArray.swift in Sources */,
 				A1E9D53E22D7A23C00F3EA74 /* CreatorProfileViewController.swift in Sources */,
 				EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */,
