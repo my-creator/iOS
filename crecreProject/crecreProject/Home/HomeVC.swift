@@ -74,7 +74,17 @@ class HomeVC: UIViewController {
 
         
     }
+    
 
+    @IBAction func nexyButton(_ sender: Any) {
+        if let transition = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController"){
+            
+            transition.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            
+            self.present(transition, animated: true, completion: nil)
+        }
+    }
+    
 
 }
 // UITableViewDataSource 를 채택합니다.
