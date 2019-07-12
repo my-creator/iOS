@@ -358,13 +358,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RC-OO-yeg">
-                                                    <rect key="frame" x="129" y="9.5" width="37" height="21"/>
+                                                    <rect key="frame" x="121" y="9.5" width="37" height="21"/>
                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icHot" translatesAutoresizingMaskIntoConstraints="NO" id="sLV-u8-HUB">
-                                                    <rect key="frame" x="103" y="12.5" width="24" height="16"/>
+                                                    <rect key="frame" x="103" y="12.5" width="16" height="16"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-PL-jou">
                                                     <rect key="frame" x="103" y="35" width="209" height="14"/>
@@ -2858,10 +2858,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2fd-Zp-1hY" kind="relationship" relationship="rootViewController" id="BQy-al-YOx"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qmp-Oz-CXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2532" y="-1916"/>
+            <point key="canvasLocation" x="-3510" y="-2054"/>
         </scene>
         <!--홈-->
         <scene sceneID="5F7-CU-WyC">
@@ -3384,7 +3387,7 @@
                                                             <constraint firstAttribute="width" constant="343" id="Z9e-sb-GIn"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="템플 스테이 묵언 수행하면 가장 먼저 탈락할 것 같은 유튜버는?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U7-qG-VcD">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쯔양이 제일 잘 먹을 것같은 매운음식은?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U7-qG-VcD">
                                                         <rect key="frame" x="16" y="223" width="314" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="GTo-2l-blX"/>
@@ -3544,7 +3547,7 @@
                                                             <constraint firstAttribute="height" constant="200" id="shG-Mj-889"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="크리크리에서 술 제일 잘마시는 사람은?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMW-ZO-Eps">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="크리크리에서 노래를 제일 잘부르는 사람은?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMW-ZO-Eps">
                                                         <rect key="frame" x="16" y="223" width="314" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="B2a-2A-nII"/>
@@ -3724,6 +3727,10 @@
                         <viewLayoutGuide key="safeArea" id="Tkx-wR-RBC"/>
                     </view>
                     <size key="freeformSize" width="375" height="1400"/>
+                    <connections>
+                        <outlet property="image1" destination="uOi-oG-qS6" id="2WQ-Z9-cou"/>
+                        <outlet property="image2" destination="6NB-7K-ILy" id="rjy-fU-Yaz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qj-nn-WQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6853,10 +6860,41 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="bPm-Rw-YSh" kind="relationship" relationship="rootViewController" id="rIa-Dx-1V5"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZt-Pp-17l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3868" y="382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p3N-G2-8LE">
+            <objects>
+                <viewController id="bPm-Rw-YSh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="96S-bn-pBT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="서비스 준비중입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHP-qC-z2A">
+                                <rect key="frame" x="166" y="267" width="186" height="137"/>
+                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="21"/>
+                                <color key="textColor" red="0.9295009971" green="0.44514179230000001" blue="0.94121736290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tHP-qC-z2A" firstAttribute="centerX" secondItem="GUb-Oy-9tG" secondAttribute="centerX" id="Bl6-Gb-5Xr"/>
+                            <constraint firstItem="tHP-qC-z2A" firstAttribute="centerY" secondItem="GUb-Oy-9tG" secondAttribute="centerY" id="Fg3-aq-D3t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GUb-Oy-9tG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wkY-NB-Mqn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0TI-KQ-APA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3826.4000000000001" y="1128.4857571214393"/>
         </scene>
         <!--투표-->
         <scene sceneID="HSW-6J-Nde">
@@ -8842,7 +8880,7 @@
                                                             <rect key="frame" x="95" y="13" width="24" height="20"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH5-zU-s3T">
-                                                            <rect key="frame" x="127" y="13" width="205" height="20"/>
+                                                            <rect key="frame" x="119" y="13" width="205" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="13a-AM-Jpk"/>
                                                                 <constraint firstAttribute="width" constant="205" id="h5O-TF-Vfh"/>
@@ -9077,22 +9115,22 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgProfile" translatesAutoresizingMaskIntoConstraints="NO" id="SYA-mM-RUD">
-                                                            <rect key="frame" x="31" y="12" width="32" height="32"/>
+                                                            <rect key="frame" x="31" y="12" width="16" height="16"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpz-dY-KjU">
-                                                            <rect key="frame" x="71" y="11" width="31.5" height="18"/>
+                                                            <rect key="frame" x="55" y="11" width="31.5" height="18"/>
                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs6-Ol-jEb">
-                                                            <rect key="frame" x="71" y="28" width="31.5" height="15"/>
+                                                            <rect key="frame" x="55" y="28" width="31.5" height="15"/>
                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="10"/>
                                                             <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzU-qN-Lhe">
-                                                            <rect key="frame" x="71" y="44" width="237" height="15"/>
+                                                            <rect key="frame" x="55" y="44" width="253" height="15"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -9239,6 +9277,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iec-oN-a0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5014" y="1057"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DOa-jZ-fxV">
+            <objects>
+                <viewController id="2fd-Zp-1hY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yBY-eL-rej">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="서비스 준비중입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGI-FL-tCX">
+                                <rect key="frame" x="166" y="267" width="186" height="137"/>
+                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="21"/>
+                                <color key="textColor" red="0.9295009971" green="0.44514179230000001" blue="0.94121736290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RGI-FL-tCX" firstAttribute="centerX" secondItem="bss-TF-1lO" secondAttribute="centerX" id="UQ3-fw-Eb2"/>
+                            <constraint firstItem="RGI-FL-tCX" firstAttribute="centerY" secondItem="bss-TF-1lO" secondAttribute="centerY" id="jPI-02-YWO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bss-TF-1lO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UgK-Cy-quB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kV-dH-y1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2532" y="-2234"/>
         </scene>
     </scenes>
     <resources>
