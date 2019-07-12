@@ -15,17 +15,16 @@ struct CreatorSearchService{
     
     func getCreatorInfo(creator_name: String, completion: @escaping (NetworkResult<Any>) -> Void) {
         
+        let URL = APIConstants.CreatorInfoURL + "b"
+        //"/\(creator_name)"
         
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-
         
-        let tempUrl = APIConstants.CreatorInfoURL + "?name=\(creator_name)"
-        let url: URL = URL(string: tempUrl.addingPercentEncoding(withAllowedCharacters:.urlQueryAllowed)!)!
-        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
+        Alamofire.request(URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
             .responseData { response in
-                
+           
                 switch response.result {
                     
                 case .success:
@@ -33,9 +32,9 @@ struct CreatorSearchService{
                         
                         
                         if let status = response.response?.statusCode {
-                               
+                             
                             switch status {
-                            
+                                
                             case 200:
                                 do {
                                     let decoder = JSONDecoder()
@@ -73,5 +72,72 @@ struct CreatorSearchService{
                     completion(.networkFail)
                     break
                 }
+        }//getCreatorInfo
+        
+        func getCreatorCnt( completion: @escaping (NetworkResult<Any>) -> Void) {
+            
+            let URL = APIConstants.CreatorCntURL
+            //"/\(creator_name)"
+            
+            let header: HTTPHeaders = [
+                "Content-Type" : "application/json"
+            ]
+            
+            Alamofire.request(URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
+                .responseData { response in
+                    
+                    switch response.result {
+                        
+                    case .success:
+                        if let value = response.result.value {
+                            
+                            
+                            if let status = response.response?.statusCode {
+                                switch status {
+                                    
+                                case 200:
+                                    do {
+                                        let decoder = JSONDecoder()
+                                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+                                        let result = try decoder.decode(ResponseArray<Result>.self, from: value)
+                                        
+                                        
+                                        switch result.success {
+                                            
+                                        case true:
+                                            completion(.success(result.data!))
+                                            
+                                        case false:
+                                            completion(.requestErr(result.message))
+                                        }
+                                    } catch {
+                                        completion(.pathErr)
+                                    }
+                                    
+                                case 400:
+                                    completion(.pathErr)
+                                case 500:
+                                    completion(.serverErr)
+                                    
+                                default:
+                                    break
+                                }
+                            }
+                        }
+                        break
+                        
+                    case .failure(let err):
+                        
+                        print(err.localizedDescription)
+                        completion(.networkFail)
+                        break
+                    }
+            }
+            
+            
+            
+            
+            
+        }
+    }
 }
-    }}
