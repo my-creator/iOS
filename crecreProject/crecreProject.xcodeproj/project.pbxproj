@@ -42,6 +42,7 @@
 		EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE622CA02A100FF35AD /* CommunityController.swift */; };
 		EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */; };
 		EFA0014D22CBB50800136693 /* CommuChildVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0014C22CBB50800136693 /* CommuChildVC2.swift */; };
+		EFA62BE222D7E63400D09E81 /* writeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA62BE122D7E63400D09E81 /* writeVC.swift */; };
 		EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF747322C90334004A0F75 /* AppDelegate.swift */; };
 		EFAF747922C90334004A0F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAF747722C90334004A0F75 /* Main.storyboard */; };
 		EFAF747B22C90335004A0F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAF747A22C90335004A0F75 /* Assets.xcassets */; };
@@ -51,7 +52,6 @@
 		EFE56AB822CA6C4C007C5E22 /* likePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AB722CA6C4C007C5E22 /* likePost.swift */; };
 		EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC322CA6E66007C5E22 /* PostCell.swift */; };
 		EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE56AC522CA8401007C5E22 /* HotPostController.swift */; };
-		EFF8756C22D772E100F06812 /* ResearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8756B22D772E100F06812 /* ResearchViewCell.swift */; };
 		EFF8757022D775A400F06812 /* BrandNewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */; };
 		EFF8757622D77A5000F06812 /* BrandNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8757522D77A5000F06812 /* BrandNewVC.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +94,7 @@
 		EF6E5EE622CA02A100FF35AD /* CommunityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityController.swift; sourceTree = "<group>"; };
 		EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuChildVC1.swift; sourceTree = "<group>"; };
 		EFA0014C22CBB50800136693 /* CommuChildVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuChildVC2.swift; sourceTree = "<group>"; };
+		EFA62BE122D7E63400D09E81 /* writeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeVC.swift; sourceTree = "<group>"; };
 		EFAF747022C90334004A0F75 /* crecreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crecreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAF747322C90334004A0F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAF747822C90334004A0F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,7 +106,6 @@
 		EFE56AB722CA6C4C007C5E22 /* likePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likePost.swift; sourceTree = "<group>"; };
 		EFE56AC322CA6E66007C5E22 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EFE56AC522CA8401007C5E22 /* HotPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPostController.swift; sourceTree = "<group>"; };
-		EFF8756B22D772E100F06812 /* ResearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewCell.swift; sourceTree = "<group>"; };
 		EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandNewTableViewCell.swift; sourceTree = "<group>"; };
 		EFF8757522D77A5000F06812 /* BrandNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandNewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +125,7 @@
 		A11E885822D5FBFA006469F3 /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				EFA62BE122D7E63400D09E81 /* writeVC.swift */,
 				EFF8757522D77A5000F06812 /* BrandNewVC.swift */,
 				EFF8756F22D775A400F06812 /* BrandNewTableViewCell.swift */,
 				EFD5EA1B22D72C1E0019D70E /* FreeBulletinTableCell.swift */,
@@ -180,7 +181,6 @@
 		A1CC08AA22D626E900B8D0F2 /* Creatorsearch */ = {
 			isa = PBXGroup;
 			children = (
-				EFF8756B22D772E100F06812 /* ResearchViewCell.swift */,
 				A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */,
 				A1D87F2722D7ADEA0050C5A0 /* ResearchViewCell.swift */,
 			);
@@ -408,7 +408,6 @@
 				A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */,
 				EFD6A1D022CAFA80002336FE /* FreeBulletinVC.swift in Sources */,
 				A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */,
-				EFF8756C22D772E100F06812 /* ResearchViewCell.swift in Sources */,
 				A1CC08B922D7298C00B8D0F2 /* UIImageView+extensions.swift in Sources */,
 				A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */,
 				EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */,
@@ -421,6 +420,7 @@
 				EF19114C22D668D100992258 /* Comment.swift in Sources */,
 				A1E0FAAD22D0822700AEB709 /* ViewController.swift in Sources */,
 				EFD5EA1C22D72C1E0019D70E /* FreeBulletinTableCell.swift in Sources */,
+				EFA62BE222D7E63400D09E81 /* writeVC.swift in Sources */,
 				EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */,
 				A1FE558A22D321720056364A /* Vote_SuggestionVC.swift in Sources */,
 				A1CC08BD22D72E6C00B8D0F2 /* ResponseArray.swift in Sources */,

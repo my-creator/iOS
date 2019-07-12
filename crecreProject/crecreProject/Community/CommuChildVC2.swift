@@ -18,6 +18,7 @@ class CommuChildVC2: UIViewController, IndicatorInfoProvider{
         super.viewDidLoad()
            Child2TableView.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
         
+        
         // Do any additional setup after loading the view.
     }
     
