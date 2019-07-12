@@ -3023,6 +3023,9 @@
                         <outlet property="CreatorCnt" destination="zgs-NA-x71" id="7CD-sv-tff"/>
                         <outlet property="ResearchTableView" destination="Y19-2l-uYf" id="QDy-JG-FWj"/>
                         <outlet property="SearchBarView" destination="O3a-IS-7Bf" id="9aH-zj-2Ev"/>
+                        <outlet property="SearchCnt" destination="2ot-JE-37v" id="mic-YM-Onp"/>
+                        <outlet property="SearchTextField" destination="q9j-eG-gUu" id="eU3-SL-7Gl"/>
+                        <outlet property="creatorAllCnt" destination="PjO-NK-Bjy" id="LOX-A0-Oez"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1r-gw-pKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3436,7 +3439,6 @@
                                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
-                                                            <action selector="SearchTextField:" destination="7EM-fp-8MX" eventType="editingDidEnd" id="cAo-FV-d9h"/>
                                                             <outlet property="delegate" destination="7EM-fp-8MX" id="9Jo-uD-Xpx"/>
                                                         </connections>
                                                     </textField>
@@ -3491,7 +3493,7 @@
                                                     <color key="titleColor" red="0.9295009971" green="0.44514179230000001" blue="0.94121736290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="ShowOnetoFive:" destination="7EM-fp-8MX" eventType="touchUpInside" id="GnH-ad-XSC"/>
+                                                    <action selector="funcBtnAction:" destination="7EM-fp-8MX" eventType="touchUpInside" id="l4T-i6-XLJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywv-NP-Mw4">
@@ -3506,7 +3508,7 @@
                                                     <color key="titleColor" red="0.9295009971" green="0.44514179230000001" blue="0.94121736290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="ShowSixToTen:" destination="7EM-fp-8MX" eventType="touchUpInside" id="MJ1-Pn-58l"/>
+                                                    <action selector="funcBtnAction:" destination="7EM-fp-8MX" eventType="touchUpInside" id="C7g-Y2-pKd"/>
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-GR-diI">
