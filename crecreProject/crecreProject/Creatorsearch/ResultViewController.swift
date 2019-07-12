@@ -117,7 +117,7 @@ extension ResultViewController: UITextFieldDelegate {
             
             delegate?.sendData(data: data)
             
-            dismiss(animated: true, completion: nil)
+//            dismiss(animated: true, completion: nil)
 
         
 //

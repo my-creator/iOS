@@ -77,6 +77,8 @@ class CommunityController: ButtonBarPagerTabStripViewController {
         let child_2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child2")
         return [child_1, child_2]
     }
+    
+    
         
         
     
@@ -140,7 +142,7 @@ extension CommunityController: UITableViewDataSource {
 //         테이블 뷰 의 row 를 변화시키면 그에 따라 대응되는 모델(데이터)도 변화시켜주어야 합니다.
 //         sourceIndexPath와 destinationIndexPath를 통해 이동을 시작한 index와 새롭게 설정된 index를 가져올 수 있습니다.
 //         */
-//        let movingIndex = postLI[sourceIndexPath.row]
+//        let movingIndex = [sourceIndexPath.row]
 //
 //        musicList.remove(at: sourceIndexPath.row)
 //        musicList.insert(movingIndex, at: destinationIndexPath.row)

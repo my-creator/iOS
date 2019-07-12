@@ -41,6 +41,9 @@
 		EF19114E22D66B0D00992258 /* DetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19114D22D66B0D00992258 /* DetailTVC.swift */; };
 		EF25A52722D86DCD00ED5AE2 /* Child1TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25A52622D86DCD00ED5AE2 /* Child1TVC.swift */; };
 		EF25A52922D86E0200ED5AE2 /* Child2TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25A52822D86E0200ED5AE2 /* Child2TVC.swift */; };
+		EF25A52B22D8CA1A00ED5AE2 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25A52A22D8CA1A00ED5AE2 /* loginVC.swift */; };
+		EF4CE7F022D8D88F0006C6FB /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4CE7EF22D8D88F0006C6FB /* signUpVC.swift */; };
+		EF4CE7F622D900EB0006C6FB /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4CE7F522D900EB0006C6FB /* SuccessVC.swift */; };
 		EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE422CA007100FF35AD /* SearchController.swift */; };
 		EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E5EE622CA02A100FF35AD /* CommunityController.swift */; };
 		EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */; };
@@ -96,6 +99,9 @@
 		EF19114D22D66B0D00992258 /* DetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTVC.swift; sourceTree = "<group>"; };
 		EF25A52622D86DCD00ED5AE2 /* Child1TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child1TVC.swift; sourceTree = "<group>"; };
 		EF25A52822D86E0200ED5AE2 /* Child2TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child2TVC.swift; sourceTree = "<group>"; };
+		EF25A52A22D8CA1A00ED5AE2 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		EF4CE7EF22D8D88F0006C6FB /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
+		EF4CE7F522D900EB0006C6FB /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
 		EF6E5EE422CA007100FF35AD /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		EF6E5EE622CA02A100FF35AD /* CommunityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityController.swift; sourceTree = "<group>"; };
 		EFA0014A22CBB4F400136693 /* CommuChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuChildVC1.swift; sourceTree = "<group>"; };
@@ -264,6 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				EFAF747722C90334004A0F75 /* Main.storyboard */,
+				EF4CE7F522D900EB0006C6FB /* SuccessVC.swift */,
+				EF4CE7EF22D8D88F0006C6FB /* signUpVC.swift */,
+				EF25A52A22D8CA1A00ED5AE2 /* loginVC.swift */,
 				A1E0FAAC22D0822700AEB709 /* ViewController.swift */,
 				A1E9D54022D7A27300F3EA74 /* profile */,
 				EFAF747322C90334004A0F75 /* AppDelegate.swift */,
@@ -427,6 +436,7 @@
 				A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */,
 				A1E0FAAF22D0870300AEB709 /* VoteVC.swift in Sources */,
 				EFE56AB822CA6C4C007C5E22 /* likePost.swift in Sources */,
+				EF4CE7F022D8D88F0006C6FB /* signUpVC.swift in Sources */,
 				EF19114C22D668D100992258 /* Comment.swift in Sources */,
 				A1E0FAAD22D0822700AEB709 /* ViewController.swift in Sources */,
 				EFD5EA1C22D72C1E0019D70E /* FreeBulletinTableCell.swift in Sources */,
@@ -441,9 +451,11 @@
 				A1CC08B022D6367D00B8D0F2 /* Research.swift in Sources */,
 				EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */,
 				EFF8757022D775A400F06812 /* BrandNewTableViewCell.swift in Sources */,
+				EF25A52B22D8CA1A00ED5AE2 /* loginVC.swift in Sources */,
 				A1CC08B222D7260000B8D0F2 /* APIContants.swift in Sources */,
 				A191A88A22D5237E00412C10 /* FBDetailVC.swift in Sources */,
 				A191A89222D5E94D00412C10 /* Vote.swift in Sources */,
+				EF4CE7F622D900EB0006C6FB /* SuccessVC.swift in Sources */,
 				EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */,
 				EF19114E22D66B0D00992258 /* DetailTVC.swift in Sources */,
 				A1CC08C322D72F9F00B8D0F2 /* NetworkResult.swift in Sources */,
