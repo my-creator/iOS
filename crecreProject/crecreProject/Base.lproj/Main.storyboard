@@ -2878,7 +2878,7 @@
                                     <constraint firstAttribute="width" constant="343" id="YHp-J8-vG0"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResearchViewCell" rowHeight="80" id="ofU-NP-4L3" customClass="ResearchViewCell" customModule="crecreProject">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResearchViewCell" rowHeight="80" id="ofU-NP-4L3" customClass="ResearchViewCell" customModule="crecreProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ofU-NP-4L3" id="Jyj-J8-T3n">
