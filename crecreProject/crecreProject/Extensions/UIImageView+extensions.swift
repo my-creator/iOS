@@ -13,7 +13,7 @@ import Kingfisher
 extension UIImageView {
     public func imageFromUrl(_ urlString: String?, defaultImgPath : String) {
         let defaultImg = UIImage(named: defaultImgPath)
-        if let url = urlString {
+        if let url = urlString?.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) {
             if url.isEmpty {
                 self.image = defaultImg
             } else {

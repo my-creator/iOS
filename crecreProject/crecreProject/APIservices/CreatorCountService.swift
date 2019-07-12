@@ -1,5 +1,5 @@
 //
-//  RankService.swift
+//  CreatorCountService.swift
 //  crecreProject
 //
 //  Created by 황채연 on 12/07/2019.
@@ -9,13 +9,13 @@
 import Foundation
 import Alamofire
 
-struct RankService {
+struct CreatorCountService{
     
-    static let shared = RankService()
-    
-    func getRank( completion: @escaping (NetworkResult<Any>) -> Void) {
+    static let shared = CreatorCountService()
+    func getCreatorCnt( completion: @escaping (NetworkResult<Any>) -> Void) {
         
-        let URL = APIConstants.RankURL 
+        let URL = APIConstants.CreatorCntURL
+        //"/\(creator_name)"
         
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"
@@ -28,26 +28,32 @@ struct RankService {
                     
                 case .success:
                     if let value = response.result.value {
+                        
+                      
                         if let status = response.response?.statusCode {
+                                    print("count",status)
                             switch status {
-                     
+                                
                             case 200:
                                 do {
                                     let decoder = JSONDecoder()
                                     decoder.keyDecodingStrategy = .convertFromSnakeCase
-                                    let result = try decoder.decode(ResponseArray<Rank>.self, from: value)
+                                    let result = try decoder.decode(ResponseArray<Result>.self, from: value)
+                                    
                                     
                                     switch result.success {
-                                       
+                                        
                                     case true:
                                         completion(.success(result.data!))
+                                        
                                     case false:
                                         completion(.requestErr(result.message))
-                                        
                                     }
                                 } catch {
+                                    
                                     completion(.pathErr)
                                 }
+                                
                             case 400:
                                 completion(.pathErr)
                             case 500:
@@ -67,5 +73,7 @@ struct RankService {
                     break
                 }
         }
+        
+        
     }
 }
