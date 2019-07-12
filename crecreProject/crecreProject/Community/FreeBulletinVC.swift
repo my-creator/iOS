@@ -13,18 +13,50 @@ class FreeBulletinVC: UIViewController {
     @IBOutlet weak var DBTable: UITableView!
     
     var postList: [post] = []
+    var navbarTitle: String?
+    var imageSection: UIImage!
+    var hotImageSection: UIImage!
+    var titleLabel: String?
+    var info: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         DBTable.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
-        // Do any additional setup after loading the view.
-        self.title = "자유게시판"
+
         
-        setPostData()
+        switch navbarTitle {
+            
+        case "자유게시판":
+            print("자유게시판이 로드되었습니다")
+            DBTable.dataSource = self
+            DBTable.delegate = self
+            setPostData()
+        default:
+            print("다른게시판이 로드되었습니다")
+            self.navigationController?.navigationBar.topItem?.title = ""
+            self.title = navbarTitle
+            setContentData().self
+            
+        }
+    }
+    
+    func setContentData(){
         
-        DBTable.dataSource = self
-        DBTable.delegate = self
-        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            
+            return postList.count
+        }
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = DBTable.dequeueReusableCell(withIdentifier: "FreeBulletinTableCell") as! FreeBulletinTableCell
+            cell.HotImage.image = hotImageSection
+            cell.postImage.image = imageSection
+            cell.titleLabel.text = titleLabel
+            cell.infoLabel.text = info
+            print("데이터를 주입합니다")
+            
+            return cell
+        }
+
     }
         
     override func viewDidDisappear(_ animated: Bool) {
@@ -36,7 +68,6 @@ class FreeBulletinVC: UIViewController {
             DBTable.deselectRow(at: index, animated: true)
         }
     }
-
 }
 
 
@@ -131,7 +162,7 @@ extension FreeBulletinVC: UITableViewDataSource {
 }
 
 
-extension FreeBulletinVC {
+extension FreeBulletinVC{
     func setPostData() {
         //        let music1 = Music(title: "삐삐", singer: "아이유", coverName: "album_iu")
         let post1 = post(title: "맛집추천", info: "김리뷰", coverName: "puppy", coverNameInfo: "icHot")
