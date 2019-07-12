@@ -14,9 +14,10 @@ struct CreatorSearchService{
     static let shared = CreatorSearchService()
     
     func getCreatorInfo(creator_name: String, completion: @escaping (NetworkResult<Any>) -> Void) {
+  
         
-        let URL = APIConstants.CreatorInfoURL + "b"
-                //"/\(creator_name)"
+        let URL = APIConstants.CreatorInfoURL + "\(creator_name)"
+        print(URL)
 
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"

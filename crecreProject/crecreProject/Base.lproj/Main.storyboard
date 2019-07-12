@@ -3011,6 +3011,9 @@
                         <outlet property="CreatorCnt" destination="zgs-NA-x71" id="7CD-sv-tff"/>
                         <outlet property="ResearchTableView" destination="Y19-2l-uYf" id="QDy-JG-FWj"/>
                         <outlet property="SearchBarView" destination="O3a-IS-7Bf" id="9aH-zj-2Ev"/>
+                        <outlet property="SearchCnt" destination="2ot-JE-37v" id="mic-YM-Onp"/>
+                        <outlet property="SearchTextField" destination="q9j-eG-gUu" id="eU3-SL-7Gl"/>
+                        <outlet property="creatorAllCnt" destination="PjO-NK-Bjy" id="LOX-A0-Oez"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1r-gw-pKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
