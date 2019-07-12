@@ -10,9 +10,9 @@ import Foundation
 
 
 struct likePost {
-    var postTitle: String
+    var navbarTitle: String
     
     init(title: String){
-        self.postTitle = title
+        self.navbarTitle = title
     }
 }

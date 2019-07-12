@@ -102,7 +102,7 @@ extension CommunityController: UITableViewDataSource {
         
         let post = postList[indexPath.row]
         
-        cell.postTitle.text = post.postTitle
+        cell.postTitle.text = post.navbarTitle
         
         return cell
     }
@@ -121,12 +121,7 @@ extension CommunityController: UITableViewDataSource {
 //        // 해당하는 인덱스의 Model 을 저장합니다.
 //        let post = postList[indexPath.row]
 //
-//        dvc.albumImg = music.albumImg
-//        dvc.musicTitle = music.musicTitle
-//        dvc.singer = music.singer
-//
 //        // push 방식으로 화면을 전환합니다.
-//        navigationController?.pushViewController(dvc, animated: true)
 //    } // 여기까지 보셨다면 잠깐 다시 위의 viewDidDisappear로!
 //
 //    // canMoveRowAt은 테이블뷰의 row의 위치를 이동할 수 있는지 없는지 설정합니다.
@@ -145,7 +140,7 @@ extension CommunityController: UITableViewDataSource {
 //         테이블 뷰 의 row 를 변화시키면 그에 따라 대응되는 모델(데이터)도 변화시켜주어야 합니다.
 //         sourceIndexPath와 destinationIndexPath를 통해 이동을 시작한 index와 새롭게 설정된 index를 가져올 수 있습니다.
 //         */
-//        let movingIndex = musicList[sourceIndexPath.row]
+//        let movingIndex = postLI[sourceIndexPath.row]
 //
 //        musicList.remove(at: sourceIndexPath.row)
 //        musicList.insert(movingIndex, at: destinationIndexPath.row)
@@ -166,8 +161,8 @@ extension CommunityController {
     
     func setPostData() {
         
-        let post1 = likePost(title: "title1")
-        let post2 = likePost(title: "title2이다")
+        let post1 = likePost(title: "자유게시판")
+        let post2 = likePost(title: "최신글")
         
         postList = [post1,post2]
     }
