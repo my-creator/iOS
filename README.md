@@ -1,6 +1,27 @@
-# iOS
-Repository for 크리크리's iOS
+#### 크리크리
+- 크리에이터 랭킹조회 및 커뮤니티 서비스
 
-## [SOPT] app jam crecre
-### 기종 : I phone 8
-### 개발 언어 : swift 4.2
+
+<br/>
+<br/>
+
+#### 개발환경
+
+- swift 4.2
+- Alamofire 
+- Hue 
+- SwiftyJSON 
+- XLPaferTabStrip
+- Kingfisher
+
+
+##### 기능
+
+- 기능 : 랭킹, 투표, 커뮤니티
+- 
+
+
+##### ios 팀원
+
+- 하준혁
+- 황채연
