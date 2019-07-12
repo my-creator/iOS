@@ -13,38 +13,38 @@ struct CreatorSearchService{
     
     static let shared = CreatorSearchService()
     
-    func getCreatorInfo(creatorName: String, completion: @escaping (NetworkResult<Any>) -> Void) {
-  
-   
+    func getCreatorInfo(creator_name: String, completion: @escaping (NetworkResult<Any>) -> Void) {
         
         
-        let tmpURL = APIConstants.CreatorInfoURL+"?name=\(creatorName)"
-        let url :URL = URL(string: tmpURL.addingPercentEncoding(withAllowedCharacters:.urlQueryAllowed)!)!
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
 
-        Alamofire.request(URL.self as! URLConvertible, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
+        
+        let tempUrl = APIConstants.CreatorInfoURL + "?name=\(creator_name)"
+        let url: URL = URL(string: tempUrl.addingPercentEncoding(withAllowedCharacters:.urlQueryAllowed)!)!
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
             .responseData { response in
-
+                
                 switch response.result {
                     
                 case .success:
                     if let value = response.result.value {
-                       
-    
+                        
+                        
                         if let status = response.response?.statusCode {
+                               
                             switch status {
-                                
+                            
                             case 200:
                                 do {
-                                    
                                     let decoder = JSONDecoder()
                                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                                     let result = try decoder.decode(ResponseArray<Result>.self, from: value)
-                               
+                                    
+                                    
                                     switch result.success {
-                                   
+                                        
                                     case true:
                                         completion(.success(result.data!))
                                         
@@ -73,7 +73,5 @@ struct CreatorSearchService{
                     completion(.networkFail)
                     break
                 }
-        }//getCreatorInfo
-        
-    }
 }
+    }}
