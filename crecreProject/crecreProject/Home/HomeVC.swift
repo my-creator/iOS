@@ -106,9 +106,7 @@ class HomeVC: UIViewController {
        RankService.shared.getRank() {
             [weak self]
             data in
-            
             guard let `self` = self else { return }
-            
             switch data {
             case .success(let res):
                 
@@ -137,11 +135,6 @@ class HomeVC: UIViewController {
     }// func
     
   
-    
-    
-    
-        
-        
         
         
     }
@@ -163,9 +156,7 @@ extension HomeVC: UICollectionViewDataSource{
         cell.RankLabel.text = String(rank.ranking)
         cell.RankTitleLabel.text = rank.creatorName
         cell.RankVariationLabel.text = String(rank.searchCnt)
-        if( rank.upDown < 0) {
-               cell.UpDownImage = UIImage(contentsOfFile:"icn_down")
-        }else { cell.UpDownImage = UIImage(contentsOfFile:"ic_up")}
+       cell.UpDownImage = UIImage(contentsOfFile:"ic_up")
         
         return cell
     }

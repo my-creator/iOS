@@ -29,6 +29,5 @@ import Foundation
 struct Rank: Codable {
     let ranking: Int
     let creatorName: String
-    let searchCnt: String
-    let upDown: Int
+    let searchCnt: Int
 }

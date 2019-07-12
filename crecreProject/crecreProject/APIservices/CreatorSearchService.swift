@@ -37,11 +37,11 @@ struct CreatorSearchService{
                                 
                             case 200:
                                 do {
+                                    
                                     let decoder = JSONDecoder()
                                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                                     let result = try decoder.decode(ResponseArray<Result>.self, from: value)
-                               
-                                    
+                               print(result)
                                     switch result.success {
                                    
                                     case true:
