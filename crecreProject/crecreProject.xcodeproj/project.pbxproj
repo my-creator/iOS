@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2FDDC56C2B9FF561FE37439B /* Pods_crecreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */; };
 		A132BE0922D8594600808B7E /* RankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132BE0822D8594600808B7E /* RankService.swift */; };
+		A132BE0D22D8CBA700808B7E /* CreatorCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132BE0C22D8CBA700808B7E /* CreatorCountService.swift */; };
 		A191A88822D522F800412C10 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88722D522F800412C10 /* post.swift */; };
 		A191A88A22D5237E00412C10 /* FBDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88922D5237E00412C10 /* FBDetailVC.swift */; };
 		A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88B22D5250D00412C10 /* HotTableViewCell.swift */; };
@@ -63,6 +64,7 @@
 		1F01D5EADBC184ED9326007A /* Pods-crecreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.release.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.release.xcconfig"; sourceTree = "<group>"; };
 		225702C006F3E29CA76C9E52 /* Pods-crecreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.debug.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A132BE0822D8594600808B7E /* RankService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankService.swift; sourceTree = "<group>"; };
+		A132BE0C22D8CBA700808B7E /* CreatorCountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorCountService.swift; sourceTree = "<group>"; };
 		A191A88722D522F800412C10 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		A191A88922D5237E00412C10 /* FBDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDetailVC.swift; sourceTree = "<group>"; };
 		A191A88B22D5250D00412C10 /* HotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTableViewCell.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				A1CC08B522D728CE00B8D0F2 /* CreatorSearchService.swift */,
+				A132BE0C22D8CBA700808B7E /* CreatorCountService.swift */,
 				A132BE0822D8594600808B7E /* RankService.swift */,
 			);
 			path = APIservices;
@@ -438,6 +441,7 @@
 				A1E9D53E22D7A23C00F3EA74 /* CreatorProfileViewController.swift in Sources */,
 				EFAF747422C90334004A0F75 /* AppDelegate.swift in Sources */,
 				A1CC08B622D728CE00B8D0F2 /* CreatorSearchService.swift in Sources */,
+				A132BE0D22D8CBA700808B7E /* CreatorCountService.swift in Sources */,
 				A1CC08B022D6367D00B8D0F2 /* Research.swift in Sources */,
 				EFE56AC422CA6E66007C5E22 /* PostCell.swift in Sources */,
 				EFF8757022D775A400F06812 /* BrandNewTableViewCell.swift in Sources */,
