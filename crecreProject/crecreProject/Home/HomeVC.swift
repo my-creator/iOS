@@ -30,9 +30,11 @@ class HomeVC: UIViewController {
     @IBOutlet weak var VoteButton: UIButton!
     
     @IBOutlet weak var VoteBackgroundView: UIView!
+    
+    
   
     var rankList: [Rank] = []
-    
+    var voteList: [Vote] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,11 +65,16 @@ class HomeVC: UIViewController {
         VoteBackgroundView.layer.shadowOffset = .init(width: 0, height: 4)
         VoteBackgroundView.layer.shadowRadius = 8
         
-
-
+        setVoteData()
         
-    }
-    
+        HomeVoteCollectionView.dataSource = self as! UICollectionViewDataSource
+        HomeVoteCollectionView.delegate = self as! UICollectionViewDelegate
+        
+        
+//        HomeVoteCollectionView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(gesture:))))
+//
+  }
+//
 
     @IBAction func nexyButton(_ sender: Any) {
         if let transition = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController"){
@@ -146,8 +153,11 @@ class HomeVC: UIViewController {
 // UITableViewDataSource 를 채택합니다.
 extension HomeVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+       
         return rankList.count
+        return voteList.count
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "RankCell", for: indexPath) as! RankViewCell
@@ -159,7 +169,35 @@ extension HomeVC: UICollectionViewDataSource{
        cell.UpDownImage = UIImage(contentsOfFile:"ic_up")
         
         return cell
+        
+        
+        let cill = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeVoteCell", for: indexPath) as! HomeVoteCollectionViewCell
+        let vote = voteList[indexPath.row]
+        
+        cill.OptionClassImage.image = vote.classImg
+       cill.OptionTitleImage.image = vote.titleImg
+        cill.OptionTitleLabel.text = vote.optionTitle
+        
+        return cill
+        
+        
+        
+        
     }
+    
+    
+//
+//
+//    private func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeVoteCell", for: indexPath) as! HomeVoteCollectionViewCell
+//        let vote = voteList[indexPath.row]
+//
+//        cell.OptionClassImage.image = vote.classImg
+//        cell.OptionTitleImage.image = vote.titleImg
+//        cell.OptionTitleLabel.text = vote.optionTitle
+//
+//        return cell
+//    }
     
 }
 
@@ -172,26 +210,25 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
 
        return CGSize(width: width, height: height)
     }
+
+
+
+
 }
 
-
-
-
-
-//extension HomeVC {
-//    func setRankData() {
-//        let rank1 = Rank(rank: "1", ranktitle:"크리크리", rankvariation: "23422", updown : "ic_up")
-//        let rank2 = Rank(rank: "2", ranktitle:"D-3", rankvariation: "2214", updown : "icn_down")
-//        let rank3 = Rank(rank: "3", ranktitle:"ios", rankvariation: "3454", updown : "ic_up")
-//        let rank4 = Rank(rank: "4", ranktitle:"술팟", rankvariation: "312", updown : "ic_up")
-//        let rank5 = Rank(rank: "5", ranktitle:"제발되라", rankvariation: "1334", updown : "icn_down")
-//      
-//        let vote = Vote(image: "btn_check", closeddate: "2일후 마감", title: "크리크리에서 술팟장은?", detailtitle: "나도 홍삼이 보고싶다")
-//        
-//        rankList = [rank1, rank2, rank3, rank4, rank5]
-//      
-//    }
-// 
-//}
+extension HomeVC {
+    func setVoteData() {
+        let vote1 = Vote(classimage: "icn_class3_3x", titleImage: "", titleoption: "술팟장")
+        let vote2 = Vote(classimage: "icn_class4_3x", titleImage: "", titleoption: "야팟장")
+        let vote3 = Vote(classimage: "icn_class2_3x", titleImage: "", titleoption: "홍삼")
+        let vote4 = Vote(classimage: "icn_class3_4x", titleImage: "", titleoption: "시온조교")
+        
+        
+      
+        voteList = [vote1, vote2, vote3, vote4,]
+      
+    }
+ 
+}
 
 

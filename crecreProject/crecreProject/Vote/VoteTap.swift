@@ -11,7 +11,7 @@ import UIKit
 
 // Music 모델입니다.
 // 멤버 변수가 총 세 개인 Music 구조체를 생성했습니다.
-struct Vote {
+struct TapVote {
     var VoteImage: UIImage?
     var Closeddate : String
     var VoteTitle: String
