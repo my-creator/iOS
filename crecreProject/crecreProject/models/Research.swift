@@ -37,3 +37,6 @@ struct Result: Codable {
     let imgUrl: String
     let  youtubeSubscriberCnt: Int
 }
+
+
+

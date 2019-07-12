@@ -9,5 +9,4 @@ import Foundation
 
 struct Count: Codable {
     let creatorAllCnt: String
-   
 }

@@ -32,7 +32,7 @@ class ResultViewController: UIViewController {
 
     var delegate: SendDataDelegate?
     
-    
+    var countList : [Count] = []
     var resultList: [Result] = []
     
     override func viewDidLoad() {
@@ -60,8 +60,8 @@ class ResultViewController: UIViewController {
         
      
         SearchTextField.delegate = self
-        
-        
+//        getCreatorCnt()
+  //      callCount()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +70,74 @@ class ResultViewController: UIViewController {
         
        
     }
+    
+    
+//    func getCreatorCnt(){
+//
+//        CreatorCountService.shared.getCreatorCnt() {
+//            [weak self]
+//            data in
+//
+//            guard let `self` = self else { return }
+//
+//            switch data {
+//            case .success(let res):
+//
+//                let url = CreatorCntURL
+//
+//
+//                let response = try String(contentsOf: url!)
+//
+//
+//
+//                self.creatorAllCnt.text = response
+//
+//           //     self.countList = res as! [Count]
+//             // self.creatorAllCnt = String(countList)
+//
+//
+//                break
+//            case .requestErr(let err):
+//                print(".requestErr(\(err))")
+//                break
+//            case .pathErr:
+//                // 대체로 경로를 잘못 쓴 경우입니다.
+//                // 오타를 확인해보세요.
+//                print("count 경로 에러")
+//                break
+//            case .serverErr:
+//                // 서버의 문제인 경우입니다.
+//                // 여기에서 동작할 행동을 정의해주시면 됩니다.
+//                print("count 서버 에러")
+//                break
+//            case .networkFail:
+//           //     self.simpleAlert(title: "통신 실패", message: "네트워크 상태를 확인하세요.")
+//                break
+//            }
+//        }
+//    }
+//    func callCount() {
+//
+//        do {
+//
+//            let url = URL(string: "http://13.125.32.90:3000/api/creators/allcreatorcnt")
+//
+//            let response = try String(contentsOf: url!)
+//            print(response)
+//
+//            self.creatorAllCnt.text = resultList.
+////
+//
+//        }catch let e as NSError {
+//
+//            print(e.localizedDescription)
+//
+//        }
+//
+//    }
+    
+    
+    
     
 //    func getCreatorInfo(creator_name: String) {
 //
@@ -116,17 +184,15 @@ extension ResultViewController: UITextFieldDelegate {
         guard let data = SearchTextField.text  else {return }
             
             delegate?.sendData(data: data)
-            
-//            dismiss(animated: true, completion: nil)
 
-        
-//
-//
+  
 //        guard let creator = SearchTextField.text else {return }
         
         
-       print(SearchTextField.text)
-        CreatorSearchService.shared.getCreatorInfo(creator_name: "\(data)"){
+//       print(SearchTextField.text)
+//        data.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+
+        CreatorSearchService.shared.getCreatorInfo(creator_name:"\(data)"){
 
             data in
             switch data {
@@ -165,9 +231,6 @@ extension ResultViewController: UITextFieldDelegate {
 
 
 
-
-
-
 extension ResultViewController: UITableViewDataSource {
 
     
@@ -177,9 +240,10 @@ extension ResultViewController: UITableViewDataSource {
         
         
         
-   //     SearchCnt.isHidden = true
+      //  SearchCnt.isHidden = true
         self.CreatorCnt.text = String(resultList.count)
         return resultList.count
+        
         
         
     }
@@ -188,7 +252,7 @@ extension ResultViewController: UITableViewDataSource {
     // 각 index 에 해당하는 셀에 데이터를 주입합니다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-    //    ResearchTableView.isHidden = true
+  //      ResearchTableView.isHidden = true
 
         let cell = ResearchTableView.dequeueReusableCell(withIdentifier: "ResearchViewCell") as! ResearchViewCell
 

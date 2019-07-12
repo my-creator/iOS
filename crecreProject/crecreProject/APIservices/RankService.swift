@@ -29,18 +29,21 @@ struct RankService {
                 case .success:
                     if let value = response.result.value {
                         if let status = response.response?.statusCode {
-                            
                             switch status {
+                     
                             case 200:
                                 do {
                                     let decoder = JSONDecoder()
+                                    decoder.keyDecodingStrategy = .convertFromSnakeCase
                                     let result = try decoder.decode(ResponseArray<Rank>.self, from: value)
                                     
                                     switch result.success {
+                                       
                                     case true:
                                         completion(.success(result.data!))
                                     case false:
                                         completion(.requestErr(result.message))
+                                        
                                     }
                                 } catch {
                                     completion(.pathErr)
