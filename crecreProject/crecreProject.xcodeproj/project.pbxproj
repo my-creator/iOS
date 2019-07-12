@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2FDDC56C2B9FF561FE37439B /* Pods_crecreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */; };
+		A132BE0922D8594600808B7E /* RankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132BE0822D8594600808B7E /* RankService.swift */; };
 		A191A88822D522F800412C10 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88722D522F800412C10 /* post.swift */; };
 		A191A88A22D5237E00412C10 /* FBDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88922D5237E00412C10 /* FBDetailVC.swift */; };
 		A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88B22D5250D00412C10 /* HotTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		1F01D5EADBC184ED9326007A /* Pods-crecreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.release.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.release.xcconfig"; sourceTree = "<group>"; };
 		225702C006F3E29CA76C9E52 /* Pods-crecreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.debug.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.debug.xcconfig"; sourceTree = "<group>"; };
+		A132BE0822D8594600808B7E /* RankService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankService.swift; sourceTree = "<group>"; };
 		A191A88722D522F800412C10 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		A191A88922D5237E00412C10 /* FBDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDetailVC.swift; sourceTree = "<group>"; };
 		A191A88B22D5250D00412C10 /* HotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTableViewCell.swift; sourceTree = "<group>"; };
@@ -172,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				A191A88D22D5BAC600412C10 /* RankViewCell.swift */,
-				A191A88F22D5BE0E00412C10 /* Rank.swift */,
 				A1E778A322CCCAB800F44504 /* HomeVC.swift */,
 			);
 			path = Home;
@@ -192,6 +193,7 @@
 			children = (
 				A1CC08AF22D6367D00B8D0F2 /* Research.swift */,
 				A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */,
+				A191A88F22D5BE0E00412C10 /* Rank.swift */,
 				A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */,
 				A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */,
 				A1CC08BC22D72E6C00B8D0F2 /* ResponseArray.swift */,
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A1CC08B522D728CE00B8D0F2 /* CreatorSearchService.swift */,
+				A132BE0822D8594600808B7E /* RankService.swift */,
 			);
 			path = APIservices;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				A1E778A222CC94E900F44504 /* VoteChildVC2.swift in Sources */,
 				EFE56AC622CA8401007C5E22 /* HotPostController.swift in Sources */,
 				A191A89022D5BE0E00412C10 /* Rank.swift in Sources */,
+				A132BE0922D8594600808B7E /* RankService.swift in Sources */,
 				A1CC08BB22D729C700B8D0F2 /* UIColor+extensions.swift in Sources */,
 				EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */,
 				A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */,

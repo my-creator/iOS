@@ -16,6 +16,6 @@ class RankViewCell: UICollectionViewCell {
     
     @IBOutlet weak var RankVariationLabel: UILabel!
     
-    @IBOutlet weak var UpDownImage: UIImageView!
+    @IBOutlet weak var UpDownImage: UIImage!
     
 }
