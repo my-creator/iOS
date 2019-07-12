@@ -5,7 +5,6 @@
 //  Created by 황채연 on 11/07/2019.
 //  Copyright © 2019 하준혁. All rights reserved.
 //
-
 import UIKit
 import Kingfisher
 
@@ -13,7 +12,7 @@ import Kingfisher
 extension UIImageView {
     public func imageFromUrl(_ urlString: String?, defaultImgPath : String) {
         let defaultImg = UIImage(named: defaultImgPath)
-        if let url = urlString?.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) {
+        if let url = urlString {
             if url.isEmpty {
                 self.image = defaultImg
             } else {

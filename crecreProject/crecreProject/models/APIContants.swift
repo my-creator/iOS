@@ -9,6 +9,6 @@
 struct APIConstants {
     static let BaseURL = "http://13.125.32.90:3000/api/creators"
     static let CreatorCntURL = BaseURL + "/allcreatorcnt"
-    static let CreatorInfoURL = BaseURL  + "/creatorSearch"
+    static let CreatorInfoURL = BaseURL  + "/creatorSearch?name="
     static let RankURL = BaseURL + "/chart/hot"
 }
