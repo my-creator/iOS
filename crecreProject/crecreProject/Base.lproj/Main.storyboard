@@ -4001,6 +4001,7 @@
                                                                     <constraint firstAttribute="height" constant="1" id="aJy-JW-OmL"/>
                                                                 </constraints>
                                                             </view>
+
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="HomeVoteCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-GH-Cjd">
                                                                 <rect key="frame" x="0.0" y="337" width="343" height="224"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4015,7 +4016,6 @@
                                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
-                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeVoteCell" id="F0D-cN-J4o" customClass="HomeVoteCollectionViewCell" customModule="crecreProject" customModuleProvider="target">
                                                                         <rect key="frame" x="0.5" y="0.0" width="342" height="50"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

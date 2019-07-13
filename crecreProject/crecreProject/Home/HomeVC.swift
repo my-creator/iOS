@@ -38,21 +38,21 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        
         
         getRank()
        
         
         RankCollectionView.delegate = self as? UICollectionViewDelegate
         RankCollectionView.dataSource = self as UICollectionViewDataSource
+        HomeVoteCollectionView.delegate = self as? UICollectionViewDelegate
+        HomeVoteCollectionView.dataSource = self as UICollectionViewDataSource
        SearchView.layer.cornerRadius = 6
         SearchView.layer.borderWidth = 2
         SearchView.layer.borderColor = UIColor(white: 112/255, alpha: 1).cgColor
         
         let image = UIImage(named: "creator" )
         HomeVoteImage.image = image
-       HomeVoteImage.layer.masksToBounds = true
+        HomeVoteImage.layer.masksToBounds = true
         HomeVoteImage.layer.cornerRadius = 10
         
         
@@ -140,11 +140,7 @@ class HomeVC: UIViewController {
             }
         }
     }// func
-    
-  
-        
-        
-    }
+}
 
 
 
@@ -160,61 +156,35 @@ extension HomeVC: UICollectionViewDataSource{
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "RankCell", for: indexPath) as! RankViewCell
-        let rank = rankList[indexPath.row]
-        
-        cell.RankLabel.text = String(rank.ranking)
-        cell.RankTitleLabel.text = rank.creatorName
-        cell.RankVariationLabel.text = String(rank.searchCnt)
-       cell.UpDownImage = UIImage(contentsOfFile:"ic_up")
-        
-        return cell
-        
-        
-        let cill = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeVoteCell", for: indexPath) as! HomeVoteCollectionViewCell
-        let vote = voteList[indexPath.row]
-        
-        cill.OptionClassImage.image = vote.classImg
-       cill.OptionTitleImage.image = vote.titleImg
-        cill.OptionTitleLabel.text = vote.optionTitle
-        
-        return cill
-        
-        
-        
-        
+            let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "RankCell", for: indexPath) as! RankViewCell
+            let rank = rankList[indexPath.row]
+            
+            cell.RankLabel.text = String(rank.ranking)
+            cell.RankTitleLabel.text = rank.creatorName
+            cell.RankVariationLabel.text = String(rank.searchCnt)
+            cell.UpDownImage = UIImage(contentsOfFile:"ic_up")
+    
+            return cell
+        }
     }
-    
-    
-//
-//
-//    private func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeVoteCell", for: indexPath) as! HomeVoteCollectionViewCell
-//        let vote = voteList[indexPath.row]
-//
-//        cell.OptionClassImage.image = vote.classImg
-//        cell.OptionTitleImage.image = vote.titleImg
-//        cell.OptionTitleLabel.text = vote.optionTitle
-//
-//        return cell
+
+
+//extension HomeVC {
+//    func setRankData() {
+//        let rank1 = Rank(rank: "1", ranktitle:"크리크리", rankvariation: "23422", updown : "ic_up")
+//        let rank2 = Rank(rank: "2", ranktitle:"D-3", rankvariation: "2214", updown : "icn_down")
+//        let rank3 = Rank(rank: "3", ranktitle:"ios", rankvariation: "3454", updown : "ic_up")
+//        let rank4 = Rank(rank: "4", ranktitle:"술팟", rankvariation: "312", updown : "ic_up")
+//        let rank5 = Rank(rank: "5", ranktitle:"제발되라", rankvariation: "1334", updown : "icn_down")
+//      
+//        let vote = Vote(image: "btn_check", closeddate: "2일후 마감", title: "크리크리에서 술팟장은?", detailtitle: "나도 홍삼이 보고싶다")
+//        
+//        rankList = [rank1, rank2, rank3, rank4, rank5]
+//      
 //    }
-    
-}
+// 
+//}
 
-extension HomeVC: UICollectionViewDelegateFlowLayout {
-    
-    // Collection View Cell 의 width, height 를 지정할 수 있습니다.
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-      let width: CGFloat = view.frame.width
-      let height: CGFloat = (view.frame.height / 20)
-
-       return CGSize(width: width, height: height)
-    }
-
-
-
-
-}
 
 extension HomeVC {
     func setVoteData() {
@@ -231,4 +201,15 @@ extension HomeVC {
  
 }
 
-
+extension HomeVC: UICollectionViewDelegateFlowLayout {
+    
+    // Collection View Cell 의 width, height 를 지정할 수 있습니다.
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width: CGFloat = view.frame.width
+        let height: CGFloat = (view.frame.height / 20)
+        
+        return CGSize(width: width, height: height)
+    }
+    
+    
+}
