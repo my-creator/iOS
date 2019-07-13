@@ -3994,7 +3994,7 @@
                                                                     <constraint firstAttribute="height" constant="1" id="aJy-JW-OmL"/>
                                                                 </constraints>
                                                             </view>
-                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-GH-Cjd">
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-GH-Cjd" customClass="HomeVoteClo">
                                                                 <rect key="frame" x="0.0" y="337" width="343" height="224"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -4008,7 +4008,7 @@
                                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
-                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="F0D-cN-J4o">
+                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeVoteCell" id="F0D-cN-J4o" customClass="HomeVoteCell" customModule="crecreProject" customModuleProvider="target">
                                                                         <rect key="frame" x="0.5" y="0.0" width="342" height="50"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -4055,6 +4055,12 @@
                                                                             <constraint firstItem="y2o-RP-Wsy" firstAttribute="leading" secondItem="AJn-sI-od0" secondAttribute="trailing" constant="8" id="hfY-zf-ve7"/>
                                                                             <constraint firstItem="AJn-sI-od0" firstAttribute="centerY" secondItem="F0D-cN-J4o" secondAttribute="centerY" id="qym-kH-7mM"/>
                                                                         </constraints>
+                                                                        <connections>
+                                                                            <outlet property="checkButton" destination="hDp-em-xfx" id="9NX-Jl-Cpl"/>
+                                                                            <outlet property="profileImage" destination="y2o-RP-Wsy" id="Gnk-1N-FJY"/>
+                                                                            <outlet property="profileName" destination="vke-aG-a7Z" id="Fc4-n2-vEX"/>
+                                                                            <outlet property="rankImage" destination="AJn-sI-od0" id="Sc6-xZ-yUR"/>
+                                                                        </connections>
                                                                     </collectionViewCell>
                                                                 </cells>
                                                             </collectionView>

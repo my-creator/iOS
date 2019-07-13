@@ -32,25 +32,27 @@ class HomeVC: UIViewController {
     @IBOutlet weak var VoteBackgroundView: UIView!
   
     var rankList: [Rank] = []
+    var voteList: [voteProfile] = []
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        
         
         getRank()
        
         
         RankCollectionView.delegate = self as? UICollectionViewDelegate
         RankCollectionView.dataSource = self as UICollectionViewDataSource
+        HomeVoteCollectionView.delegate = self as? UICollectionViewDelegate
+        HomeVoteCollectionView.dataSource = self as UICollectionViewDataSource
        SearchView.layer.cornerRadius = 6
         SearchView.layer.borderWidth = 2
         SearchView.layer.borderColor = UIColor(white: 112/255, alpha: 1).cgColor
         
         let image = UIImage(named: "creator" )
         HomeVoteImage.image = image
-       HomeVoteImage.layer.masksToBounds = true
+        HomeVoteImage.layer.masksToBounds = true
         HomeVoteImage.layer.cornerRadius = 10
         
         
@@ -150,18 +152,17 @@ extension HomeVC: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "RankCell", for: indexPath) as! RankViewCell
-        let rank = rankList[indexPath.row]
-        
-        cell.RankLabel.text = String(rank.ranking)
-        cell.RankTitleLabel.text = rank.creatorName
-        cell.RankVariationLabel.text = String(rank.searchCnt)
-       cell.UpDownImage = UIImage(contentsOfFile:"ic_up")
-        
-        return cell
-    }
+            let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "RankCell", for: indexPath) as! RankViewCell
+            let rank = rankList[indexPath.row]
+            
+            cell.RankLabel.text = String(rank.ranking)
+            cell.RankTitleLabel.text = rank.creatorName
+            cell.RankVariationLabel.text = String(rank.searchCnt)
+            cell.UpDownImage = UIImage(contentsOfFile:"ic_up")
     
-}
+            return cell
+        }
+    }
 
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     
@@ -173,8 +174,6 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
        return CGSize(width: width, height: height)
     }
 }
-
-
 
 
 
