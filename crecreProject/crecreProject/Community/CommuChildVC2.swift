@@ -79,13 +79,8 @@ class CommuChildVC2: UIViewController, IndicatorInfoProvider{
 //     commit editingStyle 은 테이블뷰가 edit 된 스타일에 따라 이벤트를 설정할 수 있습니다.
 //     여기서는 editing mode 에서 한개의 row 를 delete 하였을 경우에 대한 동작을 설정하였습니다.
 //     */
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            postList.remove(at: indexPath.row)
-//            tableView.deleteRows(at: [indexPath], with: .automatic)
-//        }
-//    }
-//}
+
+
 
 extension CommuChildVC2: UITableViewDataSource {
     
@@ -95,6 +90,17 @@ extension CommuChildVC2: UITableViewDataSource {
         
         return postList.count
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            postList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    
+    
+    
+    
     
     // 각 index 에 해당하는 셀에 데이터를 주입합니다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -119,9 +125,13 @@ extension CommuChildVC2: UITableViewDataSource {
 extension CommuChildVC2 {
     func setPostData2() {
         
-        let post1 = post(title: "맛집추천", info: "김리뷰", coverName: "puppy", coverNameInfo: "icHot")
-        let post2 = post(title: "개존맛탱집", info: "타코리뷰", coverName: "puppy", coverNameInfo: "icHot")
+        let post1 = post(title: "술 제일 잘마실 것같은 뷰티 유튜버", info: "시온조교", coverName: "img8", coverNameInfo: "icHot")
+        let post2 = post(title: "차은우가 브이로그찍으면 이런 느낌?", info: "은우내꺼야다나와", coverName: "img2", coverNameInfo: "icHot")
+         let post3 = post(title: "요즘 외모 리즈찍고있는 세경씨", info: "빵꾸똥꾸", coverName: "img6", coverNameInfo: "icHot")
+        let post4 = post(title: "와..브이로그계의 배쓰 강동원", info: "동원참치", coverName: "img3", coverNameInfo: "icHot")
+        let post5 = post(title: "백종원레시피로 대용량음식 만들기", info: "조보화씨 나와봐유", coverName: "img4", coverNameInfo: "icHot")
+        let post6 = post(title: "퇴근 후 힐링영상 꼭 보세요ㅜㅜ", info: "타코리뷰", coverName: "img2", coverNameInfo: "icHot")
         
-        postList = [post1, post2]
+        postList = [post1, post2,post3,post4,post5,post6 ]
     }
 }

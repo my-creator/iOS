@@ -17,6 +17,7 @@ class CommuChildVC1: UIViewController, IndicatorInfoProvider {
 
     @IBOutlet weak var Child1TableView: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Child1TableView.separatorInset = UIEdgeInsets.init(top: 0,left: 28,bottom: 0,right: 27)
@@ -145,9 +146,14 @@ extension CommuChildVC1: UITableViewDataSource {
 extension CommuChildVC1 {
     func setPostData1() {
         //        let music1 = Music(title: "삐삐", singer: "아이유", coverName: "album_iu")
-        let post1 = post(title: "맛집추천", info: "김리뷰", coverName: "puppy", coverNameInfo: "icHot")
-        let post2 = post(title: "개존맛탱집", info: "타코리뷰", coverName: "puppy", coverNameInfo: "icHot")
+        let post1 = post(title: "쯔양이 추천하는 맛집 공유", info: "시온조교", coverName: "img1", coverNameInfo: "icHot")
+        let post2 = post(title: "퇴근 후 힐링영상 꼭 보세요ㅜㅜ", info: "타코리뷰", coverName: "img2", coverNameInfo: "icHot")
+        let post3 = post(title: "새로나온 신박한 브이로그라는데 은근 재밌다", info: "크리크루", coverName: "img3", coverNameInfo: "icHot")
+          let post4 = post(title: "내가보려고 공유하는 이사배추천템", info: "꼼화아가씨", coverName: "img4", coverNameInfo: "icHot")
+        let post5 = post(title: "마인크래프트 한방에 뽀개기", info: "마크저리가랏", coverName: "img5", coverNameInfo: "icHot")
+        let post6 = post(title: "요즘 외모 리즈찍고있는 세경씨", info: "빵꾸똥꾸", coverName: "img6", coverNameInfo: "icHot")
+        let post7 = post(title: "영남 조가비랑 강남에서 봄!", info: "영국아가씨", coverName: "img7", coverNameInfo: "icHot")
         
-        postList = [post1, post2]
+        postList = [post1, post2,post3,post4,post5,post6]
     }
 }
