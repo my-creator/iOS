@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Vote_SuggestionVC: UIViewController {
+class Vote_SuggestionVC: UIViewController,UICollectionViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()

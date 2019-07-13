@@ -358,13 +358,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RC-OO-yeg">
-                                                    <rect key="frame" x="121" y="9.5" width="37" height="21"/>
+                                                    <rect key="frame" x="129" y="9.5" width="37" height="21"/>
                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icHot" translatesAutoresizingMaskIntoConstraints="NO" id="sLV-u8-HUB">
-                                                    <rect key="frame" x="103" y="12.5" width="16" height="16"/>
+                                                    <rect key="frame" x="103" y="12.5" width="24" height="16"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-PL-jou">
                                                     <rect key="frame" x="103" y="35" width="209" height="14"/>
@@ -4142,7 +4142,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="collectionViewCell" reuseIdentifier="" id="QxK-cr-jw5">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="collectionViewCell" reuseIdentifier="HomePassedVoteCell" id="QxK-cr-jw5" customClass="HomePassedVoteCollectionViewCell" customModule="crecreProject" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="280"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -4213,6 +4213,12 @@
                                                                     <constraint firstItem="JOV-19-LHp" firstAttribute="leading" secondItem="QxK-cr-jw5" secondAttribute="leadingMargin" constant="8" id="w1g-mo-x82"/>
                                                                 </constraints>
                                                                 <size key="customSize" width="240" height="280"/>
+                                                                <connections>
+                                                                    <outlet property="HomePassedVoteClassImage" destination="ejg-Et-idC" id="wOj-6Z-QDw"/>
+                                                                    <outlet property="HomePassedVoteImage" destination="C0J-6M-ey5" id="flJ-CU-Wfp"/>
+                                                                    <outlet property="HomePassedVoteRank" destination="VfW-BW-bZj" id="idd-Yc-LRj"/>
+                                                                    <outlet property="HomePassedVoteTitle" destination="xuW-gu-f4h" id="zTy-pp-JiP"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -8595,6 +8601,7 @@
                                         <state key="normal" title="더보기"/>
                                         <connections>
                                             <action selector="moreAction:" destination="Uqt-Kx-x07" eventType="touchUpInside" id="1aV-8i-fSa"/>
+                                            <segue destination="ihC-nH-jPL" kind="showDetail" id="vxW-M0-v7v"/>
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sMH-VA-g1j">
@@ -8676,7 +8683,6 @@
                     </view>
                     <connections>
                         <outlet property="Child1TableView" destination="sMH-VA-g1j" id="KX0-ku-jOb"/>
-                        <segue destination="ihC-nH-jPL" kind="show" identifier="showmore" id="uNg-3w-1Hn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAG-NH-MGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -8862,25 +8868,21 @@
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Child2TVC" rowHeight="68" id="eI0-7l-NVU" customClass="Child2TVC" customModule="crecreProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="68"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eI0-7l-NVU" id="tmp-Z9-puz">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eI0-7l-NVU" id="tmp-Z9-puz">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vB-ED-b7N">
-                                                            <rect key="frame" x="95" y="39" width="89" height="15"/>
+                                                            <rect key="frame" x="105" y="39.5" width="26.5" height="15"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="T8A-lf-IVt"/>
-                                                                <constraint firstAttribute="width" constant="89" id="qus-tA-Ts9"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="10"/>
                                                             <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icHot" translatesAutoresizingMaskIntoConstraints="NO" id="iQk-Xc-DYU">
-                                                            <rect key="frame" x="95" y="13" width="24" height="20"/>
-                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH5-zU-s3T">
-                                                            <rect key="frame" x="119" y="13" width="205" height="20"/>
+                                                            <rect key="frame" x="137" y="13.5" width="205" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="13a-AM-Jpk"/>
                                                                 <constraint firstAttribute="width" constant="205" id="h5O-TF-Vfh"/>
@@ -8890,27 +8892,27 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tre-eU-WPG">
-                                                            <rect key="frame" x="28" y="13" width="59" height="41"/>
+                                                            <rect key="frame" x="38" y="13.5" width="59" height="41"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="41" id="HrY-jh-lN0"/>
                                                                 <constraint firstAttribute="width" constant="59" id="V6z-Yp-swf"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icHot" translatesAutoresizingMaskIntoConstraints="NO" id="iQk-Xc-DYU">
+                                                            <rect key="frame" x="105" y="15.5" width="24" height="16"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="7vB-ED-b7N" firstAttribute="leading" secondItem="tre-eU-WPG" secondAttribute="trailing" constant="8" id="0Ba-1i-Sd0"/>
+                                                        <constraint firstItem="iQk-Xc-DYU" firstAttribute="leading" secondItem="tre-eU-WPG" secondAttribute="trailing" constant="8" id="7Ak-qp-Nor"/>
                                                         <constraint firstItem="7vB-ED-b7N" firstAttribute="bottom" secondItem="tre-eU-WPG" secondAttribute="bottom" id="EGs-mP-RN1"/>
-                                                        <constraint firstItem="iQk-Xc-DYU" firstAttribute="top" secondItem="tre-eU-WPG" secondAttribute="top" id="FeL-ni-F3A"/>
-                                                        <constraint firstItem="tre-eU-WPG" firstAttribute="top" secondItem="tmp-Z9-puz" secondAttribute="top" constant="13" id="cC1-El-F4D"/>
-                                                        <constraint firstItem="iQk-Xc-DYU" firstAttribute="leading" secondItem="tre-eU-WPG" secondAttribute="trailing" constant="8" id="dg6-cg-8jz"/>
+                                                        <constraint firstItem="tre-eU-WPG" firstAttribute="leading" secondItem="tmp-Z9-puz" secondAttribute="leadingMargin" constant="23" id="Sap-qB-FIN"/>
+                                                        <constraint firstItem="iQk-Xc-DYU" firstAttribute="centerY" secondItem="dH5-zU-s3T" secondAttribute="centerY" id="VDl-fx-FDv"/>
                                                         <constraint firstItem="dH5-zU-s3T" firstAttribute="leading" secondItem="iQk-Xc-DYU" secondAttribute="trailing" constant="8" id="evR-b8-D93"/>
                                                         <constraint firstItem="tre-eU-WPG" firstAttribute="centerY" secondItem="tmp-Z9-puz" secondAttribute="centerY" id="hDz-LI-NzY"/>
                                                         <constraint firstItem="dH5-zU-s3T" firstAttribute="top" secondItem="tre-eU-WPG" secondAttribute="top" id="wqV-B0-bJq"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <constraints>
-                                                    <constraint firstItem="tre-eU-WPG" firstAttribute="leading" secondItem="eI0-7l-NVU" secondAttribute="leading" constant="28" id="wts-Xn-ppD"/>
-                                                </constraints>
                                                 <connections>
                                                     <outlet property="ImageSection" destination="tre-eU-WPG" id="31F-Wf-IMq"/>
                                                     <outlet property="infoLabel" destination="7vB-ED-b7N" id="PQ9-4h-ojk"/>
@@ -8924,7 +8926,7 @@
                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="12"/>
                                         <state key="normal" title="더보기"/>
                                         <connections>
-                                            <segue destination="ihC-nH-jPL" kind="show" id="CM0-KG-vIx"/>
+                                            <segue destination="ihC-nH-jPL" kind="showDetail" id="tah-dx-JRn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -8955,7 +8957,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y58-pd-bYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320.8" y="1584.5577211394304"/>
+            <point key="canvasLocation" x="1321" y="1556"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="UNf-Fq-AMn">
@@ -9115,22 +9117,22 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgProfile" translatesAutoresizingMaskIntoConstraints="NO" id="SYA-mM-RUD">
-                                                            <rect key="frame" x="31" y="12" width="16" height="16"/>
+                                                            <rect key="frame" x="31" y="12" width="32" height="32"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpz-dY-KjU">
-                                                            <rect key="frame" x="55" y="11" width="31.5" height="18"/>
+                                                            <rect key="frame" x="71" y="11" width="31.5" height="18"/>
                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs6-Ol-jEb">
-                                                            <rect key="frame" x="55" y="28" width="31.5" height="15"/>
+                                                            <rect key="frame" x="71" y="28" width="31.5" height="15"/>
                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="10"/>
                                                             <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzU-qN-Lhe">
-                                                            <rect key="frame" x="55" y="44" width="253" height="15"/>
+                                                            <rect key="frame" x="71" y="44" width="237" height="15"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -9344,7 +9346,7 @@
         <image name="search_text" width="127" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uNg-3w-1Hn"/>
+        <segue reference="tah-dx-JRn"/>
         <segue reference="Qrw-fu-PBy"/>
         <segue reference="9f0-pm-OMR"/>
         <segue reference="qYb-gt-V1S"/>
