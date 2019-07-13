@@ -30,11 +30,11 @@ class HomeVC: UIViewController {
     @IBOutlet weak var VoteButton: UIButton!
     
     @IBOutlet weak var VoteBackgroundView: UIView!
+    
+    
   
     var rankList: [Rank] = []
-    var voteList: [voteProfile] = []
-    
-    
+    var voteList: [Vote] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,11 +65,16 @@ class HomeVC: UIViewController {
         VoteBackgroundView.layer.shadowOffset = .init(width: 0, height: 4)
         VoteBackgroundView.layer.shadowRadius = 8
         
-
-
+        setVoteData()
         
-    }
-    
+        HomeVoteCollectionView.dataSource = self as! UICollectionViewDataSource
+        HomeVoteCollectionView.delegate = self as! UICollectionViewDelegate
+        
+        
+//        HomeVoteCollectionView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(gesture:))))
+//
+  }
+//
 
     @IBAction func nexyButton(_ sender: Any) {
         if let transition = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController"){
@@ -135,11 +140,7 @@ class HomeVC: UIViewController {
             }
         }
     }// func
-    
-  
-        
-        
-    }
+}
 
 
 
@@ -148,8 +149,11 @@ class HomeVC: UIViewController {
 // UITableViewDataSource 를 채택합니다.
 extension HomeVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+       
         return rankList.count
+        return voteList.count
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = RankCollectionView.dequeueReusableCell(withReuseIdentifier: "RankCell", for: indexPath) as! RankViewCell
@@ -163,18 +167,6 @@ extension HomeVC: UICollectionViewDataSource{
             return cell
         }
     }
-
-extension HomeVC: UICollectionViewDelegateFlowLayout {
-    
-    // Collection View Cell 의 width, height 를 지정할 수 있습니다.
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-      let width: CGFloat = view.frame.width
-      let height: CGFloat = (view.frame.height / 20)
-
-       return CGSize(width: width, height: height)
-    }
-}
-
 
 
 //extension HomeVC {
@@ -194,3 +186,30 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
 //}
 
 
+extension HomeVC {
+    func setVoteData() {
+        let vote1 = Vote(classimage: "icn_class3_3x", titleImage: "", titleoption: "술팟장")
+        let vote2 = Vote(classimage: "icn_class4_3x", titleImage: "", titleoption: "야팟장")
+        let vote3 = Vote(classimage: "icn_class2_3x", titleImage: "", titleoption: "홍삼")
+        let vote4 = Vote(classimage: "icn_class3_4x", titleImage: "", titleoption: "시온조교")
+        
+        
+      
+        voteList = [vote1, vote2, vote3, vote4,]
+      
+    }
+ 
+}
+
+extension HomeVC: UICollectionViewDelegateFlowLayout {
+    
+    // Collection View Cell 의 width, height 를 지정할 수 있습니다.
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width: CGFloat = view.frame.width
+        let height: CGFloat = (view.frame.height / 20)
+        
+        return CGSize(width: width, height: height)
+    }
+    
+    
+}

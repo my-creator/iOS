@@ -10,11 +10,14 @@
 		2FDDC56C2B9FF561FE37439B /* Pods_crecreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9F029F960FA586313ECBE2 /* Pods_crecreProject.framework */; };
 		A132BE0922D8594600808B7E /* RankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132BE0822D8594600808B7E /* RankService.swift */; };
 		A132BE0D22D8CBA700808B7E /* CreatorCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132BE0C22D8CBA700808B7E /* CreatorCountService.swift */; };
+		A132BE0F22D9135400808B7E /* HomeVoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132BE0E22D9135400808B7E /* HomeVoteCollectionViewCell.swift */; };
+		A132BE1122D914D800808B7E /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132BE1022D914D800808B7E /* Vote.swift */; };
 		A191A88822D522F800412C10 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88722D522F800412C10 /* post.swift */; };
 		A191A88A22D5237E00412C10 /* FBDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88922D5237E00412C10 /* FBDetailVC.swift */; };
 		A191A88C22D5250D00412C10 /* HotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88B22D5250D00412C10 /* HotTableViewCell.swift */; };
 		A191A88E22D5BAC600412C10 /* RankViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88D22D5BAC600412C10 /* RankViewCell.swift */; };
 		A191A89022D5BE0E00412C10 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A88F22D5BE0E00412C10 /* Rank.swift */; };
+		A191A89222D5E94D00412C10 /* VoteTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191A89122D5E94D00412C10 /* VoteTap.swift */; };
 		A1CC08A922D6197700B8D0F2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */; };
 		A1CC08B022D6367D00B8D0F2 /* Research.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08AF22D6367D00B8D0F2 /* Research.swift */; };
 		A1CC08B222D7260000B8D0F2 /* APIContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC08B122D7260000B8D0F2 /* APIContants.swift */; };
@@ -69,11 +72,14 @@
 		225702C006F3E29CA76C9E52 /* Pods-crecreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crecreProject.debug.xcconfig"; path = "Target Support Files/Pods-crecreProject/Pods-crecreProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A132BE0822D8594600808B7E /* RankService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankService.swift; sourceTree = "<group>"; };
 		A132BE0C22D8CBA700808B7E /* CreatorCountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorCountService.swift; sourceTree = "<group>"; };
+		A132BE0E22D9135400808B7E /* HomeVoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		A132BE1022D914D800808B7E /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		A191A88722D522F800412C10 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		A191A88922D5237E00412C10 /* FBDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDetailVC.swift; sourceTree = "<group>"; };
 		A191A88B22D5250D00412C10 /* HotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTableViewCell.swift; sourceTree = "<group>"; };
 		A191A88D22D5BAC600412C10 /* RankViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewCell.swift; sourceTree = "<group>"; };
 		A191A88F22D5BE0E00412C10 /* Rank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		A191A89122D5E94D00412C10 /* VoteTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteTap.swift; sourceTree = "<group>"; };
 		A1CC08A822D6197700B8D0F2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		A1CC08AF22D6367D00B8D0F2 /* Research.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Research.swift; sourceTree = "<group>"; };
 		A1CC08B122D7260000B8D0F2 /* APIContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIContants.swift; path = crecreProject/models/APIContants.swift; sourceTree = SOURCE_ROOT; };
@@ -181,6 +187,7 @@
 				A1FE558922D321720056364A /* Vote_SuggestionVC.swift */,
 				A1E0FAAE22D0870300AEB709 /* VoteVC.swift */,
 				A1E778A122CC94E900F44504 /* VoteChildVC2.swift */,
+				A191A89122D5E94D00412C10 /* VoteTap.swift */,
 			);
 			path = Vote;
 			sourceTree = "<group>";
@@ -188,7 +195,7 @@
 		A1CC08A522D5FD2E00B8D0F2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EF20B29A22D9249A00041055 /* HomeVoteCell.swift */,
+				A132BE0E22D9135400808B7E /* HomeVoteCollectionViewCell.swift */,
 				A191A88D22D5BAC600412C10 /* RankViewCell.swift */,
 				A1E778A322CCCAB800F44504 /* HomeVC.swift */,
 				EF20B29C22D9262500041055 /* voteProfile.swift */,
@@ -210,6 +217,7 @@
 			children = (
 				A1CC08AF22D6367D00B8D0F2 /* Research.swift */,
 				A1CC08C222D72F9F00B8D0F2 /* NetworkResult.swift */,
+				A132BE1022D914D800808B7E /* Vote.swift */,
 				A191A88F22D5BE0E00412C10 /* Rank.swift */,
 				A1D87F1F22D7A6AC0050C5A0 /* CreatorCount.swift */,
 				A1CC08C422D72FC200B8D0F2 /* DefaultRes.swift */,
@@ -446,9 +454,11 @@
 				EF4CE7F022D8D88F0006C6FB /* signUpVC.swift in Sources */,
 				EF19114C22D668D100992258 /* Comment.swift in Sources */,
 				A1E0FAAD22D0822700AEB709 /* ViewController.swift in Sources */,
+				A132BE1122D914D800808B7E /* Vote.swift in Sources */,
 				EFD5EA1C22D72C1E0019D70E /* FreeBulletinTableCell.swift in Sources */,
 				EFA62BE222D7E63400D09E81 /* writeVC.swift in Sources */,
 				EF6E5EE722CA02A100FF35AD /* CommunityController.swift in Sources */,
+				A132BE0F22D9135400808B7E /* HomeVoteCollectionViewCell.swift in Sources */,
 				A1FE558A22D321720056364A /* Vote_SuggestionVC.swift in Sources */,
 				A1D87F2A22D7C1410050C5A0 /* ResearchViewCell.swift in Sources */,
 				A1CC08BD22D72E6C00B8D0F2 /* ResponseArray.swift in Sources */,
@@ -462,6 +472,7 @@
 				EF25A52B22D8CA1A00ED5AE2 /* loginVC.swift in Sources */,
 				A1CC08B222D7260000B8D0F2 /* APIContants.swift in Sources */,
 				A191A88A22D5237E00412C10 /* FBDetailVC.swift in Sources */,
+				A191A89222D5E94D00412C10 /* VoteTap.swift in Sources */,
 				EF4CE7F622D900EB0006C6FB /* SuccessVC.swift in Sources */,
 				EFA0014B22CBB4F400136693 /* CommuChildVC1.swift in Sources */,
 				EF19114E22D66B0D00992258 /* DetailTVC.swift in Sources */,
