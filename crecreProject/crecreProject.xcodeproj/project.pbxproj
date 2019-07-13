@@ -42,8 +42,6 @@
 		EF19114A22D65EE000992258 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF19114622D65EE000992258 /* NotoSansCJKkr-Regular.otf */; };
 		EF19114C22D668D100992258 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19114B22D668D100992258 /* Comment.swift */; };
 		EF19114E22D66B0D00992258 /* DetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19114D22D66B0D00992258 /* DetailTVC.swift */; };
-		EF20B29B22D9249A00041055 /* HomeVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF20B29A22D9249A00041055 /* HomeVoteCell.swift */; };
-		EF20B29D22D9262500041055 /* voteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF20B29C22D9262500041055 /* voteProfile.swift */; };
 		EF25A52722D86DCD00ED5AE2 /* Child1TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25A52622D86DCD00ED5AE2 /* Child1TVC.swift */; };
 		EF25A52922D86E0200ED5AE2 /* Child2TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25A52822D86E0200ED5AE2 /* Child2TVC.swift */; };
 		EF25A52B22D8CA1A00ED5AE2 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25A52A22D8CA1A00ED5AE2 /* loginVC.swift */; };
@@ -105,8 +103,6 @@
 		EF19114622D65EE000992258 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		EF19114B22D668D100992258 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		EF19114D22D66B0D00992258 /* DetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTVC.swift; sourceTree = "<group>"; };
-		EF20B29A22D9249A00041055 /* HomeVoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVoteCell.swift; sourceTree = "<group>"; };
-		EF20B29C22D9262500041055 /* voteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voteProfile.swift; sourceTree = "<group>"; };
 		EF25A52622D86DCD00ED5AE2 /* Child1TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child1TVC.swift; sourceTree = "<group>"; };
 		EF25A52822D86E0200ED5AE2 /* Child2TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child2TVC.swift; sourceTree = "<group>"; };
 		EF25A52A22D8CA1A00ED5AE2 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
@@ -198,7 +194,6 @@
 				A132BE0E22D9135400808B7E /* HomeVoteCollectionViewCell.swift */,
 				A191A88D22D5BAC600412C10 /* RankViewCell.swift */,
 				A1E778A322CCCAB800F44504 /* HomeVC.swift */,
-				EF20B29C22D9262500041055 /* voteProfile.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -446,7 +441,6 @@
 				A191A89022D5BE0E00412C10 /* Rank.swift in Sources */,
 				A132BE0922D8594600808B7E /* RankService.swift in Sources */,
 				A1CC08BB22D729C700B8D0F2 /* UIColor+extensions.swift in Sources */,
-				EF20B29B22D9249A00041055 /* HomeVoteCell.swift in Sources */,
 				EF6E5EE522CA007100FF35AD /* SearchController.swift in Sources */,
 				A1E778A022CC94D100F44504 /* VoteChildVC1.swift in Sources */,
 				A1E0FAAF22D0870300AEB709 /* VoteVC.swift in Sources */,
@@ -479,7 +473,6 @@
 				A1CC08C322D72F9F00B8D0F2 /* NetworkResult.swift in Sources */,
 				A1E778A422CCCAB800F44504 /* HomeVC.swift in Sources */,
 				A1CC08C522D72FC200B8D0F2 /* DefaultRes.swift in Sources */,
-				EF20B29D22D9262500041055 /* voteProfile.swift in Sources */,
 				A191A88822D522F800412C10 /* post.swift in Sources */,
 				EFA0014D22CBB50800136693 /* CommuChildVC2.swift in Sources */,
 				A1CC08A922D6197700B8D0F2 /* ResultViewController.swift in Sources */,
@@ -630,20 +623,14 @@
 			baseConfigurationReference = 225702C006F3E29CA76C9E52 /* Pods-crecreProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos12.2]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = crecreProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"MTL_ENABLE_DEBUG_INFO[sdk=iphoneos12.2]" = INCLUDE_SOURCE;
 				PRODUCT_BUNDLE_IDENTIFIER = "jun-hyeok.crecreProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -654,12 +641,8 @@
 			baseConfigurationReference = 1F01D5EADBC184ED9326007A /* Pods-crecreProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos12.2]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = crecreProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -667,7 +650,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "jun-hyeok.crecreProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
